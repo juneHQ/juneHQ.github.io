@@ -1,0 +1,345 @@
+import MdxLayout from '../../../../components/docs/MdxLayout';
+import {DocsTable} from "../../../../components/docs/widgets/DocsTable";
+
+export const meta = {
+  heading: 'React & Next.js SDK',
+  subheading: 'Instant insights from any React app',
+};
+
+This documentation provides guidance on how to integrate the June SDK with your React application. June SDK is a powerful library for tracking user interactions and events, offering similar functionality to the underlying Segment SDK.
+
+# Getting started
+
+## Installation
+
+To install June SDK in your React project, use the npm package manager:
+
+```sh
+npm install @june-so/analytics-next --save
+```
+
+Alternatively, use yarn:
+
+```sh
+yarn add @june-so/analytics-next
+```
+
+## Initialization
+
+First, you will need to import the SDK into your application:
+
+```javascript
+import { AnalyticsBrowser } from '@june-so/analytics-next';
+```
+
+Initialize the SDK using the instance key you've received when you created your June account:
+
+```javascript
+const analytics = AnalyticsBrowser.load({
+  writeKey: 'YOUR_WRITE_KEY',
+});
+```
+
+Example of a React hook that initializes the SDK:
+
+```javascript
+import { useEffect, useState } from 'react';
+import { AnalyticsBrowser } from '@june-so/analytics-next';
+
+export function useJune(writeKey) {
+  const [analytics, setAnalytics] = useState(undefined);
+
+  useEffect(() => {
+    const loadAnalytics = async () => {
+      let response = AnalyticsBrowser.load({
+        writeKey,
+      });
+      setAnalytics(response);
+    };
+    loadAnalytics();
+  }, [writeKey]);
+
+  return analytics;
+}
+```
+
+Then you can use the hook in your components:
+
+```javascript
+import { useCallback } from 'react';
+import { useJune } from './useJune';
+
+function PurchaseButton() {
+  const analytics = useJune('YOUR_WRITE_KEY');
+
+  const trackPurchase = useCallback(() => {
+    if (analytics) analytics.track('Purchase Event');
+  }, [analytics]);
+
+  return <button onClick={trackPurchase}>Purchase coat</button>;
+}
+```
+
+# API
+
+## Tracking Events
+
+To track events, you can use the `track` method:
+
+```javascript
+analytics.track(event, [properties], [options], [callback]);
+```
+
+Example:
+
+```javascript
+analytics.track('Article Completed', {
+  title: 'How to Create a Tracking Plan',
+  course: 'Intro to Analytics',
+});
+```
+
+Parameters:
+
+<DocsTable
+  header={[
+    {
+      name: 'Parameter',
+      highlight: true,
+    },
+    {
+      name: 'Type',
+    },
+    {
+      name: 'Description',
+    },
+    {
+      name: 'Required',
+    }
+  ]}
+  rows={[
+    [
+      'event',
+      'String',
+      'The name of the event you’re tracking. You can read more about the track method and recommended event names.',
+      'Required'
+    ],
+    [
+      'properties',
+      'Object',
+      'A dictionary of properties for the event. If the event was "Added to Cart", it might have properties like price and productType.',
+      'Optional'
+    ],
+    [
+      'options',
+      'Object',
+      'A dictionary of options. For example, enable or disable specific destinations for the call. Note: If you do not pass a properties object, pass an empty object (like {}) before options.',
+      'Optional'
+    ],
+    [
+      'callback',
+      'Function',
+      'A function that runs after a timeout of 300 ms, giving the browser time to make outbound requests first.',
+      'Optional'
+    ]
+  ]}
+/>
+
+## Identifying Users & Setting User Traits
+
+To identify users, you can use the `identify` method:
+
+```javascript
+analytics.identify([userId], [traits], [options], [callback]);
+```
+
+Example:
+
+```javascript
+analytics.identify('user_123', {
+  email: 'example@example.com',
+  name: 'John Doe',
+});
+```
+
+Parameters:
+
+<DocsTable
+  header={[
+    {
+      name: 'Parameter',
+      highlight: true,
+    },
+    {
+      name: 'Type',
+    },
+    {
+      name: 'Description',
+    },
+    {
+      name: 'Required',
+    }
+  ]}
+  rows={[
+    [
+      'userId',
+      'String',
+      'The database ID for the user. If you don’t know who the user is yet, you can omit the userId and just record traits. You can read more about identities in the identify reference.',
+      'Optional'
+    ],
+    [
+      'traits',
+      'Object',
+      'A dictionary of traits you know about the user, like email or name. You can read more about traits in the identify reference.',
+      'Optional'
+    ],
+    [
+      'options',
+      'Object',
+      'A dictionary of options. For example, enable or disable specific destinations for the call. Note: If you do not pass a traits object, pass an empty object (like {}) before options.',
+      'Optional'
+    ],
+    [
+      'callback',
+      'Function',
+      'A function executed after a timeout of 300 ms, giving the browser time to make outbound requests first.',
+      'Optional'
+    ]
+  ]}
+/>
+
+## Page Tracking
+
+In order to track the pages viewed by the user, use the `page` method:
+
+```javascript
+analytics.page([category], [name], [properties], [options], [callback]);
+```
+
+Example:
+
+```javascript
+analytics.page('Pricing');
+```
+
+Note: In analytics.js a page call is included in the snippet by default just after analytics.load. Many destinations require this page event to be fired at least once per page load for proper initialization. You may add an optional name or properties to the default call, or call it multiple times per page load if you have a single-page application.
+
+Parameters:
+
+<DocsTable
+  header={[
+    {
+      name: 'Parameter',
+      highlight: true,
+    },
+    {
+      name: 'Type',
+    },
+    {
+      name: 'Description',
+    },
+    {
+      name: 'Required',
+    }
+  ]}
+  rows={[
+    [
+      'category',
+      'String',
+      'The category of the page. Useful for cases like ecommerce where many pages might live under a single category. Note: if you pass only one string to page it is assumed to be name. You must include a name to send a category.',
+      'Optional'
+    ],
+    [
+      'name',
+      'String',
+      'The name of the page.',
+      'Optional'
+    ],
+    [
+      'properties',
+      'Object',
+      'A dictionary of properties of the page. Note: June SDK collects url, title, referrer, and path automatically. This defaults to a canonical URL if available, and falls back to document.location.href.',
+      'Optional'
+    ],
+    [
+      'options',
+      'Object',
+      'A dictionary of options. For example, enable or disable specific destinations for the call. Note: If you do not pass a properties object, pass an empty object (like {}) before options.',
+      'Optional'
+    ],
+    [
+      'callback',
+      'Function',
+      'A function that runs after a timeout of 300 ms, giving the browser time to make outbound requests first.',
+      'Optional'
+    ]
+  ]}
+/>
+
+## Grouping Users
+
+To group users by organization or company, use the `group` method:
+
+```javascript
+analytics.group(groupId, [traits], [options], [callback]);
+```
+
+Example:
+
+```javascript
+analytics.group('company_456', {
+  name: 'Company Name',
+  industry: 'Technology',
+  employees: 500,
+});
+```
+
+Parameters:
+
+<DocsTable
+  header={[
+    {
+      name: 'Parameter',
+      highlight: true,
+    },
+    {
+      name: 'Type',
+    },
+    {
+      name: 'Description',
+    },
+    {
+      name: 'Required',
+    }
+  ]}
+  rows={[
+    [
+      'groupId',
+      'String',
+      'The Group ID to associate with the current user.',
+      'Required'
+    ],
+    [
+      'traits',
+      'Object',
+      'A dictionary of traits for the group. Example traits for a group include address, website, and employees.',
+      'Optional'
+    ],
+    [
+      'options',
+      'Object',
+      'A dictionary of options. For example, enable or disable specific destinations for the call. Note: If you do not pass a properties object, pass an empty object (like {}) before options.',
+      'Optional'
+    ],
+    [
+      'callback',
+      'Function',
+      'A function that runs after a timeout of 300 ms, giving the browser time to make outbound requests first.',
+      'Optional'
+    ]
+  ]}
+/>
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;
+
+;

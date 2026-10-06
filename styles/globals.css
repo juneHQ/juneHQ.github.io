@@ -1,0 +1,477 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+@font-face {
+  font-family: 'Heading Font';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Inter-Black'), url('/fonts/inter-ui/Inter-Black.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Thin.woff2') format('woff2'), url('/fonts/inter-ui/Inter-Thin.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-ThinItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-ThinItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-ExtraLight.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-ExtraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-ExtraLightItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-ExtraLightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Light.woff2') format('woff2'), url('/fonts/inter-ui/Inter-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-LightItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Regular.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Italic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Medium.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-MediumItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-SemiBold.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-SemiBoldItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Bold.woff2') format('woff2'), url('/fonts/inter-ui/Inter-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-BoldItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-ExtraBold.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-ExtraBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-ExtraBoldItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-ExtraBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-Black.woff2') format('woff2'), url('/fonts/inter-ui/Inter-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/inter-ui/Inter-BlackItalic.woff2') format('woff2'),
+    url('/fonts/inter-ui/Inter-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/sn-pro/SNPro-Black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/sn-pro/SNPro-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/sn-pro/SNPro-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/sn-pro/SNPro-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SN Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/sn-pro/SNPro-Regular.woff2') format('woff2');
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+#up-down {
+  animation: MoveUpDown 1s linear infinite;
+  height: 16px;
+  width: 16px;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+#up-down {
+  animation: MoveUpDown 1s linear infinite;
+  height: 16px;
+  width: 16px;
+}
+
+@keyframes Header {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    transform: translate(0px, -10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes SocialProof {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    transform: translate(0px, 10px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+button.slick-arrow.slick-prev {
+  display: none !important;
+}
+
+button.slick-arrow.slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  bottom: 20px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.48) !important;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+}
+
+.sdk-ellipsis {
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.sdk-ellipsis > div {
+  padding: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.sdk-ellipsis > div > div {
+  background: white;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.docs__link {
+  font-weight: 600;
+  color: var(--chakra-colors-purple-500);
+}
+
+pre[class*='prism-code'] {
+  display: inline-block;
+  max-width: 80vw;
+  overflow-x: auto;
+}
+
+pre[class*='language-'] .line {
+  display: table-row;
+}
+
+pre[class*='language-'] .line-no {
+  display: table-cell;
+  text-align: right;
+  padding-right: 1em;
+  user-select: none;
+  opacity: 0.3;
+  min-width: 40px;
+}
+
+pre[class*='language-'] .line-content {
+  display: table-cell;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 65%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 8px;
+}
+
+@keyframes AskAi {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
+
+.ask-ai-container {
+  background-image: linear-gradient(
+    120deg,
+    rgb(0, 139, 230),
+    rgb(193, 114, 255),
+    rgb(223, 182, 255),
+    rgb(193, 114, 255),
+    rgb(0, 139, 230),
+    rgb(0, 139, 230)
+  );
+  -webkit-background-clip: text;
+  clip-path: url('#ask-ai');
+  background-size: 200% 200%;
+  animation: AskAi 5s linear infinite;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes ShimmeringText {
+  0% {
+    background-position: 400%;
+  }
+  100% {
+    background-position: -400%;
+  }
+}
+
+.shimmering-animation {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(60deg, #151531, #151531, #151531, #fff, #151531, #151531, #151531);
+  background-repeat: repeat;
+  animation: ShimmeringText 20s linear infinite;
+  -webkit-background-clip: text;
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+}
+
+.bento-video-card .video-js {
+  background: transparent;
+}
+
+.bento-video-card .cld-video-player.cld-fluid .vjs-poster {
+  background: transparent;
+}
+
+.bento-video-card .cld-video-player.vjs-paused .vjs-big-play-button,
+.cld-video-player.vjs-paused.vjs-has-started .vjs-big-play-button {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.auto-enrichment-video-clip video {
+  clip-path: inset(1px 1px);
+}
+
+.theydo-border-gradient {
+  background: linear-gradient(to right, #ffa579, #fba9bb, #c5a7f3, #a9b3fe, #92d9c0);
+}
+
+.searchbar input[type="search"]::-webkit-search-cancel-button {
+  margin-right: 16px;
+}
+
+.footer-accordion-body a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+  position: absolute;
+  bottom: 120%;
+}
+
+.use-case-title {
+  font-size: 32px !important;
+}
+
+@media (max-width: 640px) {
+  .small-screen-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .use-case-image {
+    padding-top: 20px
+  }
+
+  .hero-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pill {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+
+  .use-case-title {
+    font-size: 28px !important;
+  }
+}

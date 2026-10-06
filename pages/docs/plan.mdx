@@ -1,0 +1,62 @@
+import MdxLayout from '../../components/docs/MdxLayout';
+import { Box, Flex } from '@chakra-ui/react';
+import Link from 'next/link';
+
+export const meta = {
+  heading: 'What should I track?',
+};
+
+In order to understand what people do in your product you need to know:
+
+- **Who your users are (e.g. their email address, role, etc.)**
+
+- **What they do (e.g. what actions they take)**
+
+If you don't have anything in place to track this information yet, don't worry. We'll walk you through how to set it up.
+
+But before we do that I want to give you a couple of tips, so you can get the most out of June.
+
+## Start with 5 events
+
+When you're just getting started with June, it's easy to get overwhelmed by all the things you could track. So I recommend you limit yourself to just 5 events as a starting point.
+
+If you're not sure what to track, here are some ideas:
+
+- **Signed up**
+- **Used an important feature** (e.g. created a project, sent a message)
+- **Upgraded to a paid plan**
+- **Invited a team member**
+
+Make sure you keep your event names short and descriptive. What we like to use is the Object-Action convention:
+
+```
+Object + Action in the past tense
+
+e.g. Project created, Message sent, Team member invited
+```
+
+If your event names are understandable without any context, you're doing it right.
+
+## Start with 5 traits
+
+You can think of traits as a way to filter in and out the users and companies you care about. Our recommendation for traits is include information about:
+
+- **Subscription status** (e.g. free, trial, paid)
+- **Role** (e.g. admin, editor, viewer)
+- **Job title** (e.g. CEO, developer, designer)
+- **Source of signup** (e.g. organic, referral, paid)
+- **Set up status** (e.g. completed KYC, connected their CRM, or whatever is relevant to your product)
+
+If you're a B2B company, you'll want most of your traits to be company-wide. If you're a B2C company, you'll want your traits to be user-specific.
+
+## Keep most of your tracking server-side
+
+Adblockers and modern browsers are making it harder and harder to track users on the client-side. So if you want to make sure the data you're collecting is accurate, you'll want to do most of your tracking server-side.
+
+**From what we've seen frontend events make you lose between 15% and 30% of events.** So if you're only tracking on the client-side, you're missing out on a lot of data, even if you're using a reverse proxy.
+
+# Next steps
+
+Let's jump right in and get started with setting up June. [Go to the quick start guide →](/docs/quickstart/install)
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

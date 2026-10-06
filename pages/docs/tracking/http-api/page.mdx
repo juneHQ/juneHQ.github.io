@@ -1,0 +1,207 @@
+import MdxLayout from '../../../../components/docs/MdxLayout';
+import { DocsTable } from '../../../../components/docs/widgets/DocsTable';
+
+export const meta = {
+  heading: 'Page event',
+};
+
+## Endpoint
+
+```js
+POST https://api.june.so/sdk/page
+```
+
+## Purpose
+
+This action is used to track pageviews.
+
+## Response
+
+Returns a JSON response with a status of `200` and a `success` key set to `true`.
+
+```json
+{
+  "status": 200,
+  "success": true
+}
+```
+
+---
+
+# Parameters
+
+<DocsTable
+  header={[{ name: 'Parameter', highlight: true }, { name: 'Type' }, { name: 'Description' }, { name: 'Required' }]}
+  rows={[
+    [
+      'properties',
+      'Object',
+      'A dictionary of properties for the event. It should contain required pageview properties, but it can also contain any custom properties you like.',
+      'Required',
+    ],
+    [
+      'userId',
+      'String',
+      'The ID for this user in your database. Note: At least one of `userId` or `anonymousId` must be included in any track call.',
+      'Optional',
+    ],
+    ['anonymousId', 'String', 'An ID associated with the user when you don’t know who they are.', 'Optional'],
+    [
+      'timestamp',
+      'Date',
+      'A JavaScript date object representing when the track took place. If the track just happened, leave it out and the server’s time will be used. If you’re importing data from the past, make sure to send a timestamp.',
+      'Optional',
+    ],
+    ['context', 'Object', 'A dictionary of extra context to attach to the call.', 'Optional'],
+  ]}
+/>
+
+# Pageview suggested properties
+
+We don't require any properties for pageview events, but we recommend you send the following properties to get the most out of June.
+
+<DocsTable
+  header={[{ name: 'Parameter', highlight: true }, { name: 'Type' }, { name: 'Description' }, { name: 'Required' }]}
+  rows={[
+    ['url', 'Object', 'The URL of the page that the user is currently on', 'Optional'],
+    ['path', 'String', 'The path portion of the URL of the page that the user is currently on', 'Optional'],
+    ['title', 'String', 'The title of the page that the user is currently on', 'Optional'],
+    ['referrer', 'String', 'The referrer of the page that the user is currently on', 'Optional'],
+    ['search', 'String', 'The search portion of the URL of the page that the user is currently on', 'Optional'],
+  ]}
+/>
+
+# Pageview suggested context
+
+We don't require any context for pageview events, but we recommend you to send context in the following structure.
+
+<DocsTable
+  header={[{ name: 'Parameter', highlight: true }, { name: 'Type' }, { name: 'Description' }, { name: 'Required' }]}
+  rows={[
+    [
+      'app',
+      'Object',
+      'Dictionary of information about the current application, containing name, version, and build. This is collected automatically from the mobile libraries when possible.',
+      'Optional',
+    ],
+    [
+      'campaign',
+      'Object',
+      'Dictionary of information about the campaign that resulted in the API call, containing name, source, medium, term, content, and any other custom UTM parameter. This maps directly to the common UTM campaign parameters.',
+      'Optional',
+    ],
+    [
+      'device',
+      'Object',
+      'Dictionary of information about the device, containing id, advertisingId, manufacturer, model, name, type, and version.',
+      'Optional',
+    ],
+    ['ip', 'String', 'Current user’s IP address.', 'Optional'],
+    ['locale', 'String', 'Locale string for the current user, for example en-US.', 'Optional'],
+    ['os', 'Object', 'Dictionary of information about the operating system, containing name and version.', 'Optional'],
+    [
+      'referrer',
+      'Object',
+      'Dictionary of information about the way the user was referred to the website or app, containing type, name, url, and link.',
+      'Optional',
+    ],
+    [
+      'screen',
+      'Object',
+      'Dictionary of information about the device’s screen, containing density, height, and width.',
+      'Optional',
+    ],
+    [
+      'timezone',
+      'String',
+      'Timezones are sent as tzdata strings to add user timezone information which might be stripped from the timestamp, for example America/New_York.',
+      'Optional',
+    ],
+    ['groupId', 'String', 'Group / Account ID.', 'Optional'],
+  ]}
+/>
+
+## Basic example
+
+💡 June does not support a "name" property for page events, the only supported filters in June's UI are "url", "path" and "title".
+
+```js
+
+POST https://api.june.so/sdk/page
+
+{
+  "userId": "1234567890",
+  "properties": {
+    "url": "https://june.so/docs",
+    "path": "/docs",
+    "title": "June | Docs",
+    "referrer": "https://june.so",
+    "search": "?utm_source=google&utm_medium=cpc&utm_campaign=summer",
+  },
+}
+
+```
+
+## Example with context
+
+```js
+
+POST https://api.june.so/sdk/page
+
+{
+  "userId": "1234567890",
+  "properties": {
+    "url": "https://june.so/docs",
+    "path": "/docs",
+    "title": "June | Docs",
+    "referrer": "https://june.so",
+    "search": "?utm_source=google&utm_medium=cpc&utm_campaign=summer",
+  },
+  "context": {
+    "app": {
+      "name": "June",
+      "version": "1.0.0",
+      "build": "1.0.0",
+    },
+    "campaign": {
+      "name": "summer",
+      "source": "google",
+      "medium": "cpc",
+      "term": "summer",
+      "content": "summer",
+    },
+    "device": {
+      "id": "1234567890",
+      "advertisingId": "1234567890",
+      "manufacturer": "Apple",
+      "model": "iPhone",
+      "name": "iPhone",
+      "type": "mobile",
+      "version": "1.0.0",
+    },
+    "ip": "127.0.0.1",
+    "locale": "en-US",
+    "os": {
+      "name": "iOS",
+      "version": "1.0.0",
+    },
+    "referrer": {
+      "type": "website",
+      "name": "June",
+      "url": "https://june.so",
+      "link": "https://june.so",
+    },
+    "screen": {
+      "density": 2,
+      "height": 1334,
+      "width": 750,
+    },
+    "timezone": "America/New_York",
+    "groupId": "1234567890",  },
+}
+
+```
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;
+
+;

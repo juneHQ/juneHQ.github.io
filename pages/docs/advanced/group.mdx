@@ -1,0 +1,93 @@
+import MdxLayout from 'components/docs/MdxLayout';
+import { MultiLanguageGroupScript } from 'components/docs/widgets/MultiLanguageGroupScript';
+import { MultiLanguageCustomGroupScript } from 'components/docs/widgets/MultiLanguageCustomGroupScript';
+import { InstallationLink, TrackGroupLink } from 'components/docs/widgets/MiniLinks';
+import { Divider, Box, Flex } from '@chakra-ui/react';
+
+export const meta = {
+  heading: 'Identify groups',
+  subheading: 'See which groups are using your product',
+};
+
+<Box direction='column' bg='gray.100' px={5} pt={1} pb={8} mb='40px' borderRadius='lg'>
+
+## Have you installed the June SDK?
+
+If you haven't installed one of the June SDKs, please do that first before implementing the `.group` method.
+
+<InstallationLink mt={2} />
+
+</Box>
+
+# Groups
+
+## Overview
+
+Groups let you organize users into meaningful collections and track behavior at the group level instead of just individual users. This is particularly valuable for B2B products where understanding team, workspace, or organization-level activity is crucial.
+
+When you create groups, you can analyze metrics like group engagement, retention, and feature adoption. You can also segment your analytics by group properties to understand which types of organizations succeed with your product.
+
+Here are some examples:
+
+**Workspaces** (for productivity tools like Asana or Monday): Track metrics like workspace activity, average team size, and collaboration patterns across different organizations.
+
+**Accounts** (for CRM or sales tools): Analyze account health, user adoption within accounts, and revenue metrics at the customer level.
+
+**Stores** (for e-commerce platforms): Monitor store performance, product catalog usage, and merchant engagement across different retail locations.
+
+The key is identifying the organizational units that matter most for your business model and user experience. By default, we create a default group called "Workspaces" so that you can easily get started with June.
+
+<Flex my={8} justifyContent="center" align="center">
+  <img alt="Group object" src={'/docs/default-group-object.png'} />
+</Flex>
+
+#### Code
+
+Replace `GROUP_ID` with a unique identifier, preferably the workspace ID from your database. Including the workspace's name is also suggested, along with any additional "traits" like avatar, company_size etc. This information will appear on the workspace's profile and can be used to filter workspaces in reports.
+
+💡 **Not sure which traits to add?** We automatically map some standard ones: [check out our guide](https://help.june.so/en/articles/6817653-which-traits-you-should-be-tracking)
+
+<MultiLanguageGroupScript />
+
+<Divider />
+
+## Custom groups
+
+You can also create custom groups to track other organizational units, like accounts, stores, teams, etc. For example, if you're building a project management tool, you can measure engagement across different departments. This helps you understand:
+- Which departments (e.g., engineering vs marketing) use the task collaboration features most actively
+- How many team members are regularly participating in project discussions each month
+- Compare feature adoption between different teams (e.g., which teams use the kanban board vs those who mainly use task assignments)
+
+You can create a new group by clicking the "Create object" button in the top right corner of your [object settings](https://analytics.june.so/a/redirect-to-my-workspace/settings/objects).
+
+<Flex my={8} justifyContent="center" align="center">
+  <img alt="Create object button" src={'/docs/create-object-button.png'} />
+</Flex>
+
+You can then define the singular name, plural name, and group type to create the new group. For example, if you want to track metrics at the department level within a single company, you can put "Department" as the singular name, "Departments" as the plural name, and "department" as the group type.
+
+💡 **group_type** You'll need to use the group type later in the `.group` and `.track` methods to identify and track events for the correct group.
+
+<Flex my={8} justifyContent="center" align="center">
+  <Flex w="480px">
+    <img alt="Create object form" src={'/docs/create-object-form.png'} />
+  </Flex>
+</Flex>
+
+#### Code
+
+Replace `USER_ID` and `GROUP_ID` with a unique identifier, preferably the user ID and workspace ID from your database. Including the company's name is also suggested, along with any additional "traits" like avatar, company_size etc. This information will appear on the companies profile and can be used to filter companies in reports.
+
+💡 **Not sure which traits to add?** We automatically map some standard ones: [check out our guide](https://help.june.so/en/articles/6817653-which-traits-you-should-be-tracking)
+
+<MultiLanguageCustomGroupScript />
+
+<Divider />
+
+## Next: Track group behaviour
+
+Once you've implemented the `group` method in your codebase, it's time to track what your groups are doing in your product.
+
+<TrackGroupLink mt={2} />
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

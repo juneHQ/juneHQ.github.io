@@ -1,0 +1,51 @@
+import Widget from 'components/docs/widgets/Widget';
+import ScriptGenerator from 'components/docs/widgets/ScriptGenerator';
+import MdxLayout from 'components/docs/MdxLayout';
+import { MultiLanguageUserTrackScript } from 'components/docs/widgets/MultiLanguageUserTrackScript';
+import { IdentifyUsersLink, JuneLink } from 'components/docs/widgets/MiniLinks';
+import { Divider, Flex, Box } from '@chakra-ui/react';
+import { InfoIcon } from '@chakra-ui/icons';
+
+export const meta = {
+  heading: 'Track user behaviour',
+  subheading: 'See what users are doing inside your product',
+};
+
+# Users
+
+<Box direction='column' bg='gray.100' px={5} pt={1} pb={8} mt='20px' mb='40px' borderRadius='lg'>
+
+## Have you started identifying your users?
+
+If you haven't implemented the `.identify` call, please do that first before implementing the `.track` method.
+
+<IdentifyUsersLink mt={2} />
+
+</Box>
+
+## Overview
+
+This guide will teach you how to successfully track how your users are using your product.
+
+Once you've identified them, you can track what they are doing, which features they use, how often and much more. You can use the `track` method to track events on behalf of your users. Add this code snippet to basic features like "signed up", "logged in" and any additional events that may track the core features of your product.
+
+For June, one of our core features is when a user loads and creates a report. Therefore, we have a "loaded report" and "created report" event.
+
+## Code
+
+Replace `USER_ID` with your own unique identified, ideally the user ID from your database. Passing additional information is possible using the `properties` object.
+
+<MultiLanguageUserTrackScript />
+
+<Divider />
+
+<Flex direction='column'>
+      ## Ready to jump into June?
+
+      Once you've implemented the SDK, you're ready to jump into June.
+
+      <JuneLink mt={2} />
+
+</Flex>
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

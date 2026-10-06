@@ -1,0 +1,1157 @@
+[
+  {
+    "objectID": "docs/start-here#core-concepts-0",
+    "absoluteUrl": "docs/start-here",
+    "location": "#core-concepts",
+    "heading": "Start here > Core concepts",
+    "text": "Events are actions that happen in your product, like signing up, making a purchase, or viewing a page."
+  },
+  {
+    "objectID": "docs/start-here#core-concepts-1",
+    "absoluteUrl": "docs/start-here",
+    "location": "#core-concepts",
+    "heading": "Start here > Core concepts",
+    "text": "Users are the people using your product. Each user has a unique ID that lets you track their journey over time."
+  },
+  {
+    "objectID": "docs/start-here#core-concepts-2",
+    "absoluteUrl": "docs/start-here",
+    "location": "#core-concepts",
+    "heading": "Start here > Core concepts",
+    "text": "Companies are the organizations that your users belong to. Essential for B2B products where user behavior depends on their company context."
+  },
+  {
+    "objectID": "docs/start-here#core-concepts-3",
+    "absoluteUrl": "docs/start-here",
+    "location": "#core-concepts",
+    "heading": "Start here > Core concepts",
+    "text": "Traits are additional properties about users and companies - like subscription plan, role, or company size. These help you segment and understand behavior patterns."
+  },
+  {
+    "objectID": "docs/start-here#next-steps-4",
+    "absoluteUrl": "docs/start-here",
+    "location": "#next-steps",
+    "heading": "Start here > Plan your implementation",
+    "text": "Identify what events and properties matter for your product. Plan your implementation →"
+  },
+  {
+    "objectID": "docs/start-here#next-steps-5",
+    "absoluteUrl": "docs/start-here",
+    "location": "#next-steps",
+    "heading": "Start here > Start tracking",
+    "text": "If you know what you want to track, jump straight to installation. Install June →"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-6",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "When you're just getting started with June, it's easy to get overwhelmed by all the things you could track. So I recommend you limit yourself to just 5 events as a starting point."
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-7",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "If you're not sure what to track, here are some ideas:"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-8",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "Signed up"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-9",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "Used an important feature (e.g. created a project, sent a message)"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-10",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "Upgraded to a paid plan"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-11",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "Invited a team member"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-12",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "Make sure you keep your event names short and descriptive. What we like to use is the Object-Action convention:"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-events-13",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-events",
+    "heading": "What should I track? > Start with 5 events",
+    "text": "If your event names are understandable without any context, you're doing it right."
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-14",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "You can think of traits as a way to filter in and out the users and companies you care about. Our recommendation for traits is include information about:"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-15",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "Subscription status (e.g. free, trial, paid)"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-16",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "Role (e.g. admin, editor, viewer)"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-17",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "Job title (e.g. CEO, developer, designer)"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-18",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "Source of signup (e.g. organic, referral, paid)"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-19",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "Set up status (e.g. completed KYC, connected their CRM, or whatever is relevant to your product)"
+  },
+  {
+    "objectID": "docs/plan#start-with-5-traits-20",
+    "absoluteUrl": "docs/plan",
+    "location": "#start-with-5-traits",
+    "heading": "What should I track? > Start with 5 traits",
+    "text": "If you're a B2B company, you'll want most of your traits to be company-wide. If you're a B2C company, you'll want your traits to be user-specific."
+  },
+  {
+    "objectID": "docs/plan#keep-most-of-your-tracking-server-side-21",
+    "absoluteUrl": "docs/plan",
+    "location": "#keep-most-of-your-tracking-server-side",
+    "heading": "What should I track? > Keep most of your tracking server-side",
+    "text": "Adblockers and modern browsers are making it harder and harder to track users on the client-side. So if you want to make sure the data you're collecting is accurate, you'll want to do most of your tracking server-side."
+  },
+  {
+    "objectID": "docs/plan#keep-most-of-your-tracking-server-side-22",
+    "absoluteUrl": "docs/plan",
+    "location": "#keep-most-of-your-tracking-server-side",
+    "heading": "What should I track? > Keep most of your tracking server-side",
+    "text": "From what we've seen frontend events make you lose between 15% and 30% of events. So if you're only tracking on the client-side, you're missing out on a lot of data, even if you're using a reverse proxy."
+  },
+  {
+    "objectID": "docs/plan#next-steps-23",
+    "absoluteUrl": "docs/plan",
+    "location": "#next-steps",
+    "heading": "What should I track? > Next steps",
+    "text": "Let's jump right in and get started with setting up June. Go to the quick start guide →"
+  },
+  {
+    "objectID": "docs/quickstart/install#install-24",
+    "absoluteUrl": "docs/quickstart/install",
+    "location": "#install",
+    "heading": "Installation > Install",
+    "text": "Installing the June SDK is very simple - just pick your language and add the code below to your codebase."
+  },
+  {
+    "objectID": "docs/quickstart/install#next-identify-your-users-25",
+    "absoluteUrl": "docs/quickstart/install",
+    "location": "#next-identify-your-users",
+    "heading": "Installation > Next: Identify your users",
+    "text": "After installing the SDK, the next step is to identify your users & companies."
+  },
+  {
+    "objectID": "docs/quickstart/identify#have-you-installed-the-june-sdk-26",
+    "absoluteUrl": "docs/quickstart/identify",
+    "location": "#have-you-installed-the-june-sdk",
+    "heading": "Identify users > Have you installed the June SDK?",
+    "text": "If you haven't installed one of the June SDKs, please do that first before implementing the .identify method."
+  },
+  {
+    "objectID": "docs/quickstart/identify#overview-27",
+    "absoluteUrl": "docs/quickstart/identify",
+    "location": "#overview",
+    "heading": "Identify users > Overview",
+    "text": "This section provides guidance on using the identify method to successfully identify your product's users. This will show you which users are triggering events in June. It is recommended to include this code snippet in the section of your code where user sign-ups, logins, or account details updates are handled."
+  },
+  {
+    "objectID": "docs/quickstart/identify#code-28",
+    "absoluteUrl": "docs/quickstart/identify",
+    "location": "#code",
+    "heading": "Identify users > Code",
+    "text": "Replace USER_ID with a unique identifier, preferably the user ID from your database. Including the user's email is also suggested, along with any additional \"traits\" like avatar, name, role, etc. This information will appear on the user's profile and can be used to filter users in reports."
+  },
+  {
+    "objectID": "docs/quickstart/identify#code-29",
+    "absoluteUrl": "docs/quickstart/identify",
+    "location": "#code",
+    "heading": "Identify users > Code",
+    "text": "💡 Not sure which traits to add? We automatically map some standard ones: check out our guide"
+  },
+  {
+    "objectID": "docs/quickstart/identify#next-track-user-behaviour-30",
+    "absoluteUrl": "docs/quickstart/identify",
+    "location": "#next-track-user-behaviour",
+    "heading": "Identify users > Next: Track user behaviour",
+    "text": "Once you've implemented the identify method in your codebase, it's time to track what your users are doing in your product."
+  },
+  {
+    "objectID": "docs/quickstart/track-event#have-you-started-identifying-your-users-31",
+    "absoluteUrl": "docs/quickstart/track-event",
+    "location": "#have-you-started-identifying-your-users",
+    "heading": "Track user behaviour > Have you started identifying your users?",
+    "text": "If you haven't implemented the .identify call, please do that first before implementing the .track method."
+  },
+  {
+    "objectID": "docs/quickstart/track-event#overview-32",
+    "absoluteUrl": "docs/quickstart/track-event",
+    "location": "#overview",
+    "heading": "Track user behaviour > Overview",
+    "text": "This guide will teach you how to successfully track how your users are using your product."
+  },
+  {
+    "objectID": "docs/quickstart/track-event#overview-33",
+    "absoluteUrl": "docs/quickstart/track-event",
+    "location": "#overview",
+    "heading": "Track user behaviour > Overview",
+    "text": "Once you've identified them, you can track what they are doing, which features they use, how often and much more. You can use the track method to track events on behalf of your users. Add this code snippet to basic features like \"signed up\", \"logged in\" and any additional events that may track the core features of your product."
+  },
+  {
+    "objectID": "docs/quickstart/track-event#overview-34",
+    "absoluteUrl": "docs/quickstart/track-event",
+    "location": "#overview",
+    "heading": "Track user behaviour > Overview",
+    "text": "For June, one of our core features is when a user loads and creates a report. Therefore, we have a \"loaded report\" and \"created report\" event."
+  },
+  {
+    "objectID": "docs/quickstart/track-event#code-35",
+    "absoluteUrl": "docs/quickstart/track-event",
+    "location": "#code",
+    "heading": "Track user behaviour > Code",
+    "text": "Replace USER_ID with your own unique identified, ideally the user ID from your database. Passing additional information is possible using the properties object."
+  },
+  {
+    "objectID": "docs/quickstart/track-event#ready-to-jump-into-june-36",
+    "absoluteUrl": "docs/quickstart/track-event",
+    "location": "#ready-to-jump-into-june",
+    "heading": "Track user behaviour > Ready to jump into June?",
+    "text": "Once you've implemented the SDK, you're ready to jump into June."
+  },
+  {
+    "objectID": "docs/advanced/group#have-you-installed-the-june-sdk-37",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#have-you-installed-the-june-sdk",
+    "heading": "Identify groups > Have you installed the June SDK?",
+    "text": "If you haven't installed one of the June SDKs, please do that first before implementing the .group method."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-38",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "Groups let you organize users into meaningful collections and track behavior at the group level instead of just individual users. This is particularly valuable for B2B products where understanding team, workspace, or organization-level activity is crucial."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-39",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "When you create groups, you can analyze metrics like group engagement, retention, and feature adoption. You can also segment your analytics by group properties to understand which types of organizations succeed with your product."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-40",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "Here are some examples:"
+  },
+  {
+    "objectID": "docs/advanced/group#overview-41",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "Workspaces (for productivity tools like Asana or Monday): Track metrics like workspace activity, average team size, and collaboration patterns across different organizations."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-42",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "Accounts (for CRM or sales tools): Analyze account health, user adoption within accounts, and revenue metrics at the customer level."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-43",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "Stores (for e-commerce platforms): Monitor store performance, product catalog usage, and merchant engagement across different retail locations."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-44",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Overview",
+    "text": "The key is identifying the organizational units that matter most for your business model and user experience. By default, we create a default group called \"Workspaces\" so that you can easily get started with June."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-45",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Code",
+    "text": "Replace GROUP_ID with a unique identifier, preferably the workspace ID from your database. Including the workspace's name is also suggested, along with any additional \"traits\" like avatar, company_size etc. This information will appear on the workspace's profile and can be used to filter workspaces in reports."
+  },
+  {
+    "objectID": "docs/advanced/group#overview-46",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#overview",
+    "heading": "Identify groups > Code",
+    "text": "💡 Not sure which traits to add? We automatically map some standard ones: check out our guide"
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-47",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "You can also create custom groups to track other organizational units, like accounts, stores, teams, etc. For example, if you're building a project management tool, you can measure engagement across different departments. This helps you understand:"
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-48",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "Which departments (e.g., engineering vs marketing) use the task collaboration features most actively"
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-49",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "How many team members are regularly participating in project discussions each month"
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-50",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "Compare feature adoption between different teams (e.g., which teams use the kanban board vs those who mainly use task assignments)"
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-51",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "You can create a new group by clicking the \"Create object\" button in the top right corner of your object settings."
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-52",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "You can then define the singular name, plural name, and group type to create the new group. For example, if you want to track metrics at the department level within a single company, you can put \"Department\" as the singular name, \"Departments\" as the plural name, and \"department\" as the group type."
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-53",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Custom groups",
+    "text": "💡 group_type You'll need to use the group type later in the .group and .track methods to identify and track events for the correct group."
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-54",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Code",
+    "text": "Replace USER_ID and GROUP_ID with a unique identifier, preferably the user ID and workspace ID from your database. Including the company's name is also suggested, along with any additional \"traits\" like avatar, company_size etc. This information will appear on the companies profile and can be used to filter companies in reports."
+  },
+  {
+    "objectID": "docs/advanced/group#custom-groups-55",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#custom-groups",
+    "heading": "Identify groups > Code",
+    "text": "💡 Not sure which traits to add? We automatically map some standard ones: check out our guide"
+  },
+  {
+    "objectID": "docs/advanced/group#next-track-group-behaviour-56",
+    "absoluteUrl": "docs/advanced/group",
+    "location": "#next-track-group-behaviour",
+    "heading": "Identify groups > Next: Track group behaviour",
+    "text": "Once you've implemented the group method in your codebase, it's time to track what your groups are doing in your product."
+  },
+  {
+    "objectID": "docs/advanced/track-event#have-you-started-identifying-your-groups-57",
+    "absoluteUrl": "docs/advanced/track-event",
+    "location": "#have-you-started-identifying-your-groups",
+    "heading": "Tracking groups > Have you started identifying your groups?",
+    "text": "If you haven't implemented the .group call for groups, please do that first before implementing the .track method for groups."
+  },
+  {
+    "objectID": "docs/advanced/track-event#overview-58",
+    "absoluteUrl": "docs/advanced/track-event",
+    "location": "#overview",
+    "heading": "Tracking groups > Overview",
+    "text": "This guide will teach you how to successfully track how your groups (workspaces, departments, projects, etc.) are being used in your product. You can associate events with multiple groups simultaneously, creating a hierarchy of relationships. For example, you can track an event that belongs to a specific workspace, department, and project all at once."
+  },
+  {
+    "objectID": "docs/advanced/track-event#overview-59",
+    "absoluteUrl": "docs/advanced/track-event",
+    "location": "#overview",
+    "heading": "Tracking groups > Overview",
+    "text": "Note: If you have already implemented the .track call for users, you can just add the\ngroups object within the properties with the right group types and group IDs. There is no need to add additional .track calls for groups."
+  },
+  {
+    "objectID": "docs/advanced/track-event#code-60",
+    "absoluteUrl": "docs/advanced/track-event",
+    "location": "#code",
+    "heading": "Tracking groups > Code",
+    "text": "Replace USER_ID with your user identifier, and include a groups object within the properties with the right group types and group IDs. You can associate events with multiple group types by including their respective IDs."
+  },
+  {
+    "objectID": "docs/advanced/track-event#ready-to-jump-into-june-61",
+    "absoluteUrl": "docs/advanced/track-event",
+    "location": "#ready-to-jump-into-june",
+    "heading": "Tracking groups > Ready to jump into June?",
+    "text": "Once you've implemented the SDK, you're ready to jump into June."
+  },
+  {
+    "objectID": "docs/tracking/web/browser#installation-62",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#installation",
+    "heading": "Browser SDK > Installation",
+    "text": "Unlike npm or yarn installation used in Node.js or React environments, for a pure browser environment, you would typically load the SDK using a script tag. Here is an example of how to load the June SDK on your webpage:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#usage-63",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#usage",
+    "heading": "Browser SDK > Usage",
+    "text": "Once the SDK is loaded, you can use the analytics global object to access the SDK's methods."
+  },
+  {
+    "objectID": "docs/tracking/web/browser#usage-64",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#usage",
+    "heading": "Browser SDK > Usage",
+    "text": "Inside the JavaScript code:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#usage-65",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#usage",
+    "heading": "Browser SDK > Usage",
+    "text": "or inside of your HTML:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#tracking-events-66",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#tracking-events",
+    "heading": "Browser SDK > Tracking Events",
+    "text": "To track events, you can use the track method:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#tracking-events-67",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#tracking-events",
+    "heading": "Browser SDK > Tracking Events",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#tracking-events-68",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#tracking-events",
+    "heading": "Browser SDK > Tracking Events",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#identifying-users-setting-user-traits-69",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Browser SDK > Identifying Users & Setting User Traits",
+    "text": "To identify users, you can use the identify method:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#identifying-users-setting-user-traits-70",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Browser SDK > Identifying Users & Setting User Traits",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#identifying-users-setting-user-traits-71",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Browser SDK > Identifying Users & Setting User Traits",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#page-tracking-72",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#page-tracking",
+    "heading": "Browser SDK > Page Tracking",
+    "text": "In order to track the pages viewed by the user, use the page method:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#page-tracking-73",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#page-tracking",
+    "heading": "Browser SDK > Page Tracking",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#page-tracking-74",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#page-tracking",
+    "heading": "Browser SDK > Page Tracking",
+    "text": "Note: In analytics.js a page call is included in the snippet by default just after analytics.load. Many destinations require this page event to be fired at least once per page load for proper initialization. You may add an optional name or properties to the default call, or call it multiple times per page load if you have a single-page application."
+  },
+  {
+    "objectID": "docs/tracking/web/browser#page-tracking-75",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#page-tracking",
+    "heading": "Browser SDK > Page Tracking",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#grouping-users-76",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#grouping-users",
+    "heading": "Browser SDK > Grouping Users",
+    "text": "To group users by organization or company, use the group method:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#grouping-users-77",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#grouping-users",
+    "heading": "Browser SDK > Grouping Users",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#grouping-users-78",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#grouping-users",
+    "heading": "Browser SDK > Grouping Users",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/browser#grouping-users-79",
+    "absoluteUrl": "docs/tracking/web/browser",
+    "location": "#grouping-users",
+    "heading": "Browser SDK > Grouping Users",
+    "text": ";"
+  },
+  {
+    "objectID": "docs/tracking/web/react#installation-80",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#installation",
+    "heading": "React & Next.js SDK > Installation",
+    "text": "To install June SDK in your React project, use the npm package manager:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#installation-81",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#installation",
+    "heading": "React & Next.js SDK > Installation",
+    "text": "Alternatively, use yarn:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#initialization-82",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#initialization",
+    "heading": "React & Next.js SDK > Initialization",
+    "text": "First, you will need to import the SDK into your application:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#initialization-83",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#initialization",
+    "heading": "React & Next.js SDK > Initialization",
+    "text": "Initialize the SDK using the instance key you've received when you created your June account:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#initialization-84",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#initialization",
+    "heading": "React & Next.js SDK > Initialization",
+    "text": "Example of a React hook that initializes the SDK:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#initialization-85",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#initialization",
+    "heading": "React & Next.js SDK > Initialization",
+    "text": "Then you can use the hook in your components:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#tracking-events-86",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#tracking-events",
+    "heading": "React & Next.js SDK > Tracking Events",
+    "text": "To track events, you can use the track method:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#tracking-events-87",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#tracking-events",
+    "heading": "React & Next.js SDK > Tracking Events",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#tracking-events-88",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#tracking-events",
+    "heading": "React & Next.js SDK > Tracking Events",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#identifying-users-setting-user-traits-89",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "React & Next.js SDK > Identifying Users & Setting User Traits",
+    "text": "To identify users, you can use the identify method:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#identifying-users-setting-user-traits-90",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "React & Next.js SDK > Identifying Users & Setting User Traits",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#identifying-users-setting-user-traits-91",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "React & Next.js SDK > Identifying Users & Setting User Traits",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#page-tracking-92",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#page-tracking",
+    "heading": "React & Next.js SDK > Page Tracking",
+    "text": "In order to track the pages viewed by the user, use the page method:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#page-tracking-93",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#page-tracking",
+    "heading": "React & Next.js SDK > Page Tracking",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#page-tracking-94",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#page-tracking",
+    "heading": "React & Next.js SDK > Page Tracking",
+    "text": "Note: In analytics.js a page call is included in the snippet by default just after analytics.load. Many destinations require this page event to be fired at least once per page load for proper initialization. You may add an optional name or properties to the default call, or call it multiple times per page load if you have a single-page application."
+  },
+  {
+    "objectID": "docs/tracking/web/react#page-tracking-95",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#page-tracking",
+    "heading": "React & Next.js SDK > Page Tracking",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#grouping-users-96",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#grouping-users",
+    "heading": "React & Next.js SDK > Grouping Users",
+    "text": "To group users by organization or company, use the group method:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#grouping-users-97",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#grouping-users",
+    "heading": "React & Next.js SDK > Grouping Users",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#grouping-users-98",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#grouping-users",
+    "heading": "React & Next.js SDK > Grouping Users",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/web/react#grouping-users-99",
+    "absoluteUrl": "docs/tracking/web/react",
+    "location": "#grouping-users",
+    "heading": "React & Next.js SDK > Grouping Users",
+    "text": ";"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#installation-100",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#installation",
+    "heading": "Node.js SDK > Installation",
+    "text": "To install the June SDK in your Node.js project, use the npm package manager:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#installation-101",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#installation",
+    "heading": "Node.js SDK > Installation",
+    "text": "Alternatively, use yarn:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#configuration-102",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#configuration",
+    "heading": "Node.js SDK > Configuration",
+    "text": "First, you'll need to import the SDK into your application:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#configuration-103",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#configuration",
+    "heading": "Node.js SDK > Configuration",
+    "text": "Next, instantiate the client using the write key you've received when you created your June account:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#configuration-104",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#configuration",
+    "heading": "Node.js SDK > Configuration",
+    "text": "Now you can use the analytics instance to track events, identify users, and more."
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#configuration-options-105",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#configuration-options",
+    "heading": "Node.js SDK > Configuration options",
+    "text": "Example:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#tracking-events-106",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#tracking-events",
+    "heading": "Node.js SDK > Tracking Events",
+    "text": "To track events, you can use the track method:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#tracking-events-107",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#tracking-events",
+    "heading": "Node.js SDK > Tracking Events",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#identifying-users-setting-user-traits-108",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Node.js SDK > Identifying Users & Setting User Traits",
+    "text": "To identify users, you can use the identify method:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#identifying-users-setting-user-traits-109",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Node.js SDK > Identifying Users & Setting User Traits",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#grouping-users-110",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#grouping-users",
+    "heading": "Node.js SDK > Grouping Users",
+    "text": "To group users by organization or company, use the group method:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#grouping-users-111",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#grouping-users",
+    "heading": "Node.js SDK > Grouping Users",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#serverless-environments-112",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#serverless-environments",
+    "heading": "Node.js SDK > Serverless environments",
+    "text": "In serverless environemnts like AWS Lambda, your environment may finish the code execution before June SDK is able to send events to June API."
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#serverless-environments-113",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#serverless-environments",
+    "heading": "Node.js SDK > Serverless environments",
+    "text": "You can use the flush method to send all queued events to June or you can configure the SDK to flush events automatically."
+  },
+  {
+    "objectID": "docs/tracking/server/node-js#flush-events-automatically-114",
+    "absoluteUrl": "docs/tracking/server/node-js",
+    "location": "#flush-events-automatically",
+    "heading": "Node.js SDK > Flush events automatically",
+    "text": "If you set flushAt to 1, the SDK will flush events automatically after every event."
+  },
+  {
+    "objectID": "docs/tracking/server/python#installation-115",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#installation",
+    "heading": "Python SDK > Installation",
+    "text": "To install the June SDK in your Python project, use the PIP package manager:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#configuration-116",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#configuration",
+    "heading": "Python SDK > Configuration",
+    "text": "First, you'll need to import the SDK into your application. Next, instantiate the client using the write key you've received when you created your June account:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#configuration-117",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#configuration",
+    "heading": "Python SDK > Configuration",
+    "text": "Now you can use the analytics instance to track events, identify users, and more."
+  },
+  {
+    "objectID": "docs/tracking/server/python#june-python-sdk-client-configuration-118",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#june-python-sdk-client-configuration",
+    "heading": "Python SDK > June Python SDK Client Configuration",
+    "text": "The June Python SDK allows you to configure several settings according to your needs. The available configuration parameters are:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#initialization-parameters-119",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#initialization-parameters",
+    "heading": "Python SDK > Initialization Parameters",
+    "text": "Here's an example of how to configure the client:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#tracking-events-120",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#tracking-events",
+    "heading": "Python SDK > Tracking Events",
+    "text": "To track events, you can use the track method:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#tracking-events-121",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#tracking-events",
+    "heading": "Python SDK > Tracking Events",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#identifying-users-setting-user-traits-122",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Python SDK > Identifying Users & Setting User Traits",
+    "text": "To identify users, you can use the identify method:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#identifying-users-setting-user-traits-123",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Python SDK > Identifying Users & Setting User Traits",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#grouping-users-124",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#grouping-users",
+    "heading": "Python SDK > Grouping Users",
+    "text": "To group users by organization or company, use the group method:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#grouping-users-125",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#grouping-users",
+    "heading": "Python SDK > Grouping Users",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/python#serverless-environments-126",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#serverless-environments",
+    "heading": "Python SDK > Serverless environments",
+    "text": "In serverless environemnts like AWS Lambda, your environment may finish the code execution before June SDK is able to send events to June API."
+  },
+  {
+    "objectID": "docs/tracking/server/python#serverless-environments-127",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#serverless-environments",
+    "heading": "Python SDK > Serverless environments",
+    "text": "You can use the flush method to send all queued events to June or you can configure the SDK to flush events automatically."
+  },
+  {
+    "objectID": "docs/tracking/server/python#flush-events-automatically-128",
+    "absoluteUrl": "docs/tracking/server/python",
+    "location": "#flush-events-automatically",
+    "heading": "Python SDK > Flush events automatically",
+    "text": "If you set sync_mode to True, the SDK will flush events automatically after every event."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#installation-129",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#installation",
+    "heading": "Ruby SDK > Installation",
+    "text": "To install the June SDK in your Ruby project:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#configuration-130",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#configuration",
+    "heading": "Ruby SDK > Configuration",
+    "text": "First, you'll need to import the SDK into your application. Next, instantiate the client using the write key you've received when you created your June account:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#configuration-131",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#configuration",
+    "heading": "Ruby SDK > Configuration",
+    "text": "If you're using Rails, you can create a config/initializers/analytics_ruby.rb file and add the following code:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#configuration-132",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#configuration",
+    "heading": "Ruby SDK > Configuration",
+    "text": "Now you can use the analytics instance to track events, identify users, and more."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#client-configuration-133",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#client-configuration",
+    "heading": "Ruby SDK > Client configuration",
+    "text": "The June Ruby SDK configuration process involves setting various options when initializing the June::Analytics. These options allow you to fine-tune how the SDK interacts with the June Analytics service."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#client-configuration-134",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#client-configuration",
+    "heading": "Ruby SDK > Client configuration",
+    "text": "Here are the primary configuration options that you can set:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#client-configuration-135",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#client-configuration",
+    "heading": "Ruby SDK > Client configuration",
+    "text": "The options are provided as a hash to the initialize method of the Client class:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#client-configuration-136",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#client-configuration",
+    "heading": "Ruby SDK > Client configuration",
+    "text": "Remember to replace 'YOUR_WRITE_KEY' with your actual project's write key. The max_queue_size and on_error options are optional, and you can leave them out if you're happy with the default settings. If you're not testing, you should set the test option to false or just omit it entirely."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#tracking-events-137",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#tracking-events",
+    "heading": "Ruby SDK > Tracking Events",
+    "text": "To track events, you can use the track method:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#tracking-events-138",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#tracking-events",
+    "heading": "Ruby SDK > Tracking Events",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#identifying-users-setting-user-traits-139",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Ruby SDK > Identifying Users & Setting User Traits",
+    "text": "To identify users, you can use the identify method:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#identifying-users-setting-user-traits-140",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#identifying-users-setting-user-traits",
+    "heading": "Ruby SDK > Identifying Users & Setting User Traits",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#grouping-users-141",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#grouping-users",
+    "heading": "Ruby SDK > Grouping Users",
+    "text": "To group users by organization or company, use the group method:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#grouping-users-142",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#grouping-users",
+    "heading": "Ruby SDK > Grouping Users",
+    "text": "Parameters:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#serverless-environments-143",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#serverless-environments",
+    "heading": "Ruby SDK > Serverless environments",
+    "text": "In serverless environemnts like AWS Lambda, your environment may finish the code execution before June SDK is able to send events to June API."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#serverless-environments-144",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#serverless-environments",
+    "heading": "Ruby SDK > Serverless environments",
+    "text": "You can use the flush method to send all queued events to June or you can configure the SDK to flush events automatically."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#flush-events-automatically-145",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#flush-events-automatically",
+    "heading": "Ruby SDK > Flush events automatically",
+    "text": "If you set batch_size to 1, the SDK will flush events automatically after every event."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#writing-tests-146",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#writing-tests",
+    "heading": "Ruby SDK > Writing tests",
+    "text": "To test that your June integration is working as expected you can use the test option. When this option is set to true, events are not actually sent to the June Analytics API. Instead, they're added to a test queue. This is useful for debugging and testing."
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#writing-tests-147",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#writing-tests",
+    "heading": "Ruby SDK > Writing tests",
+    "text": "Your initialization code should include the test option:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#writing-tests-148",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#writing-tests",
+    "heading": "Ruby SDK > Writing tests",
+    "text": "Then in your spec code you can check that the events are being sent to the test queue:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#writing-tests-149",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#writing-tests",
+    "heading": "Ruby SDK > Writing tests",
+    "text": "Note: It is recommended to call reset! before each test to ensure your test queue is empty. For example, in rspec you may have the following:"
+  },
+  {
+    "objectID": "docs/tracking/server/ruby#writing-tests-150",
+    "absoluteUrl": "docs/tracking/server/ruby",
+    "location": "#writing-tests",
+    "heading": "Ruby SDK > Writing tests",
+    "text": "If you want to see all the methods available in the test queue class check the June Ruby SDK source code"
+  },
+  {
+    "objectID": "docs/tracking/http-api/identify#purpose-151",
+    "absoluteUrl": "docs/tracking/http-api/identify",
+    "location": "#purpose",
+    "heading": "Identify user > Purpose",
+    "text": "This action is used to track the identification of a user or an anonymous user."
+  },
+  {
+    "objectID": "docs/tracking/http-api/identify#response-152",
+    "absoluteUrl": "docs/tracking/http-api/identify",
+    "location": "#response",
+    "heading": "Identify user > Response",
+    "text": "Returns a JSON response with a status of 200 and a success key set to true."
+  },
+  {
+    "objectID": "docs/tracking/http-api/identify#note-153",
+    "absoluteUrl": "docs/tracking/http-api/identify",
+    "location": "#note",
+    "heading": "Identify user > Note",
+    "text": "It's important to note that this API will first check for an email key in the main payload object, and if not found, it will check for an email key within the traits object."
+  },
+  {
+    "objectID": "docs/tracking/http-api/group#purpose-154",
+    "absoluteUrl": "docs/tracking/http-api/group",
+    "location": "#purpose",
+    "heading": "Identify company > Purpose",
+    "text": "This action is used to track the identification of a group."
+  },
+  {
+    "objectID": "docs/tracking/http-api/group#response-155",
+    "absoluteUrl": "docs/tracking/http-api/group",
+    "location": "#response",
+    "heading": "Identify company > Response",
+    "text": "Returns a JSON response with a status of 200 and a success key set to true."
+  },
+  {
+    "objectID": "docs/tracking/http-api/track#purpose-156",
+    "absoluteUrl": "docs/tracking/http-api/track",
+    "location": "#purpose",
+    "heading": "Track event > Purpose",
+    "text": "This action is used to track the identification of a user or an anonymous user."
+  },
+  {
+    "objectID": "docs/tracking/http-api/track#response-157",
+    "absoluteUrl": "docs/tracking/http-api/track",
+    "location": "#response",
+    "heading": "Track event > Response",
+    "text": "Returns a JSON response with a status of 200 and a success key set to true."
+  },
+  {
+    "objectID": "docs/tracking/http-api/track#company-event-158",
+    "absoluteUrl": "docs/tracking/http-api/track",
+    "location": "#company-event",
+    "heading": "Track event > Company event",
+    "text": "In order to track company event, you need to pass groupId in the context object."
+  },
+  {
+    "objectID": "docs/tracking/http-api/page#purpose-159",
+    "absoluteUrl": "docs/tracking/http-api/page",
+    "location": "#purpose",
+    "heading": "Page event > Purpose",
+    "text": "This action is used to track pageviews."
+  },
+  {
+    "objectID": "docs/tracking/http-api/page#response-160",
+    "absoluteUrl": "docs/tracking/http-api/page",
+    "location": "#response",
+    "heading": "Page event > Response",
+    "text": "Returns a JSON response with a status of 200 and a success key set to true."
+  },
+  {
+    "objectID": "docs/tracking/http-api/page#pageview-suggested-properties-161",
+    "absoluteUrl": "docs/tracking/http-api/page",
+    "location": "#pageview-suggested-properties",
+    "heading": "Page event > Pageview suggested properties",
+    "text": "We don't require any properties for pageview events, but we recommend you send the following properties to get the most out of June."
+  },
+  {
+    "objectID": "docs/tracking/http-api/page#pageview-suggested-context-162",
+    "absoluteUrl": "docs/tracking/http-api/page",
+    "location": "#pageview-suggested-context",
+    "heading": "Page event > Pageview suggested context",
+    "text": "We don't require any context for pageview events, but we recommend you to send context in the following structure."
+  },
+  {
+    "objectID": "docs/tracking/http-api/page#basic-example-163",
+    "absoluteUrl": "docs/tracking/http-api/page",
+    "location": "#basic-example",
+    "heading": "Page event > Basic example",
+    "text": "💡 June does not support a \"name\" property for page events, the only supported filters in June's UI are \"url\", \"path\" and \"title\"."
+  },
+  {
+    "objectID": "docs/tracking/http-api/page#example-with-context-164",
+    "absoluteUrl": "docs/tracking/http-api/page",
+    "location": "#example-with-context",
+    "heading": "Page event > Example with context",
+    "text": ";"
+  }
+]

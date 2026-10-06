@@ -1,0 +1,12 @@
+# www.june.so llms.txt
+
+- [June Analytics Documentation](https://www.june.so/docs): June's documentation: Get started with tracking, SDKs, and APIs. Integrate June with your app quickly. Includes FAQs and a help center.
+- [June: B2B SaaS Customer Retention Pricing](https://www.june.so/pricing): All-in-one customer analytics platform for growing B2B SaaS companies.  See pricing and book a demo.
+- [June's Security Measures](https://www.june.so/security): June's commitment to data security: SOC 2 Type II compliance, yearly penetration testing, GDPR & CCPA compliance, and secure AWS infrastructure.
+- [June: Customer Analytics](https://www.june.so/): Product analytics software to improve customer retention; trusted by top SaaS companies.
+- [SaaS Product Benchmarks](https://www.june.so/benchmarks): Product metric benchmarks for SaaS companies to compare their performance.
+- [June Product Data Guides](https://www.june.so/guides): Product data guides for improving customer success, sales, and product development.
+- [Customer Stories](https://www.june.so/customer-stories): SaaS companies using June for user understanding and engagement
+- [June Resources](https://www.june.so/content): Resources for SaaS companies: blog posts, guides, podcasts, and videos to help understand users.
+- [June's Customer Analytics Blog](https://www.june.so/blog): B2B SaaS customer analytics blog posts, covering topics such as CRM, customer success, and product marketing.
+- [June AI: Product Analytics](https://www.june.so/ai): June AI: AI-powered product analytics using SQL or English. Get instant insights, share saved queries, and connect to your favorite data sources. Trusted by top B2B SaaS companies.

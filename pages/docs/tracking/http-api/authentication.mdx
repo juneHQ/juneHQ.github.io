@@ -1,0 +1,124 @@
+import MdxLayout from '../../../../components/docs/MdxLayout';
+
+export const meta = {
+  heading: 'Authentication',
+};
+
+June API requires authentication to access the API. You can authenticate your request by providing your write key in the request header.
+You can obtain your write key in the workspace settings page.
+
+```js
+Authorization: "Basic YOUR_WRITE_KEY"
+```
+
+## Examples
+
+#### JS
+
+```js
+const axios = require('axios');
+
+const data = {
+    // ...
+};
+
+axios.post('https://api.june.so/sdk/track', data, {
+    headers: {
+        Authorization: "Basic YOUR_WRITE_KEY"
+    }
+})
+```
+
+#### Go
+
+```go
+
+package main
+
+import (
+	"bytes"
+	"net/http"
+)
+
+func main() {
+	data := []byte(`{...}`) // your JSON data
+
+	req, err := http.NewRequest("POST", "https://api.june.so/sdk/track", bytes.NewBuffer(data))
+	if err != nil {
+		panic(err)
+	}
+
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("Authorization", "Basic YOUR_WRITE_KEY")
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		panic(err)
+	}
+
+	defer resp.Body.Close()
+}
+
+```
+
+#### PHP
+
+```js
+<?php
+
+require 'vendor/autoload.php';
+
+use GuzzleHttp\Client;
+
+$client = new Client([
+    // Base URI is used with relative requests
+    'base_uri' => 'https://api.june.so/sdk/track',
+]);
+
+$data = []; // your data
+
+$response = $client->request('POST', '', [
+    'headers' => [
+        'Authorization' => 'Basic YOUR_WRITE_KEY',
+        'Content-Type' => 'application/json',
+    ],
+    'json' => $data
+]);
+```
+
+#### Java
+
+```js
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpHeaders;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        HttpClient client = HttpClient.newHttpClient();
+
+        String data = "{...}"; // your JSON data
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI("https://api.june.so/sdk/track"))
+                .header("Authorization", "Basic YOUR_WRITE_KEY")
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(data, StandardCharsets.UTF_8))
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        System.out.println(response.statusCode());
+        System.out.println(response.body());
+    }
+}
+
+```
+
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

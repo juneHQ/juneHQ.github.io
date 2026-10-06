@@ -1,0 +1,242 @@
+:root {
+  --c1: #000;
+  --c2: #4f5d69;
+  --c3: #738696;
+  --c4: #919fac;
+  --c5: #bcc9d2;
+  --c6: #e0e6eb;
+  --uiBorderColor: #ecf0f4;
+  --separator: #e6ecf0;
+  --separator-end: hsla(204, 25%, 92%, 0.01);
+  --icons: #14171a;
+  --selection: rgba(29, 161, 242, 0.08);
+  --selectionHover: rgba(29, 161, 242, 0.2);
+  --buttonWhite: #fff;
+  --buttonWhiteText: #3d4851;
+  --bg0: #fff;
+  --bg0_transparent: hsla(0, 0%, 100%, 0);
+  --bg1: #fcfcfd;
+  --bg1_transparent: hsla(240, 16%, 99%, 0);
+  --bg2: #f9fafb;
+  --bg3: #f6f8f9;
+  --bg4: #edf0f2;
+  --tooltip: #fdfdfe;
+  --twitter_accent: #1da1f2;
+  --accent1: #6868f7;
+  --accent2: #6868f7;
+  --error: #f53d3d;
+  --errorHighlighting: rgba(255, 25, 56, 0.2);
+  --success: #32ae47;
+  --success-transparent: rgba(50, 174, 71, 0.1);
+  --orange: #ff9029;
+  --dark-orange: #f27c0d;
+  --shadowColor: rgba(20, 61, 82, 0.05);
+  --modalBackground: rgba(0, 0, 0, 0.2);
+  --gray-800: #343a40;
+  --gray-900: #0d131b;
+}
+
+.post-body {
+  /* max-width: 742px; */
+}
+
+.post-excerpt *:first-child {
+  margin-top: 0;
+}
+.post-excerpt *:last-child {
+  margin-bottom: 0;
+}
+
+.post-body p,
+.post-body span,
+.post-body li,
+.post-body blockquote {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.post-body figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+
+.post-body a {
+  max-width: 100%;
+  color: var(--accent1);
+}
+.post-body figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.post-body p {
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+.post-body h1,
+.post-body h2 {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+.post-body h3,
+.post-body h4,
+.post-body h5 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+.post-body h1,
+.post-body h2 {
+  font-size: 40px;
+}
+.post-body h3 {
+  font-size: 24px;
+}
+.post-body h4 {
+  font-size: 22px;
+}
+.post-body h5 {
+  font-size: 20px;
+}
+
+@media (min-width: 800px) {
+  .post-body figure img {
+    max-width: calc(100%);
+    object-fit: cover;
+  }
+}
+.post-body blockquote {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 2px solid var(--c6);
+}
+.post-body hr {
+  border: none;
+  border-bottom: 1px solid var(--uiBorderColor);
+  margin: 3em auto;
+  width: 100%;
+  max-width: 12em;
+}
+.post-body figcaption {
+  font-size: 0.9em;
+  color: var(--c3);
+  text-align: center;
+  padding-top: 1em;
+}
+
+.post-body pre {
+  background: hsla(0, 0%, 50%, 0.1);
+  border-radius: 5px;
+  overflow-x: scroll;
+  padding: 16px 8px;
+  max-width: 90vw;
+}
+
+.post-body code {
+  font-size: 92%;
+  padding: 4px 5px;
+}
+
+.post-body ul {
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
+.post-body ul li {
+  list-style: none;
+}
+.post-body ul li::before {
+  content: '•';
+  color: var(--gray-800);
+  display: inline-block;
+  width: 18px;
+  margin-left: -20px;
+  position: relative;
+  bottom: 1px;
+}
+
+.post-body ol {
+  padding-left: 32px;
+  counter-reset: list;
+}
+/* style ol li number */
+.post-body ol > li {
+  position: relative;
+  counter-increment: list;
+  list-style: none;
+}
+.post-body ol > li:before {
+  content: counter(list) '.';
+  position: absolute;
+  display: block;
+  width: 20px;
+  left: -28px;
+  top: 0;
+  text-align: right;
+  color: var(--c4);
+}
+
+.post-body li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.post-body iframe {
+  max-width: 100%;
+}
+
+.toc {
+  overflow-y: auto;
+  color: var(--chakra-colors-third)
+}
+.toc > .toc-list {
+  overflow: hidden;
+  position: relative;
+}
+.toc > .toc-list li {
+  list-style: none;
+}
+.js-toc {
+  overflow-y: hidden;
+}
+.toc-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+a.toc-link {
+  color: currentColor;
+  height: 100%;
+}
+.is-collapsible {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+.is-collapsed {
+  max-height: 0;
+}
+.is-position-fixed {
+  position: fixed !important;
+  top: 0;
+}
+.is-active-link {
+  font-weight: 700;
+}
+.toc-link::before {
+  content: ' ';
+  display: inline-block;
+  /* height: inherit; This was causing the page to have white space at the bottom*/
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  width: 2px;
+}

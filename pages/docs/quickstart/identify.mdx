@@ -1,0 +1,46 @@
+import Widget from 'components/docs/widgets/Widget';
+import ScriptGenerator from 'components/docs/widgets/ScriptGenerator';
+import MdxLayout from 'components/docs/MdxLayout';
+import { MultiLanguageIdentifyScript } from 'components/docs/widgets/MultiLanguageIdentifyScript';
+import { InstallationLink, TrackLink } from 'components/docs/widgets/MiniLinks';
+import { Divider, Box, Link } from '@chakra-ui/react';
+import { IdentifyUsersLink } from 'components/docs/widgets/MiniLinks';
+
+export const meta = {
+  heading: 'Identify users',
+  subheading: 'See which users are using your product',
+};
+
+<Box direction='column' bg='gray.100' px={5} pt={1} pb={8} mb='40px' borderRadius='lg'>
+
+## Have you installed the June SDK?
+
+If you haven't installed one of the June SDKs, please do that first before implementing the `.identify` method.
+
+<InstallationLink mt={2} />
+
+</Box>
+
+# Users
+
+## Overview
+
+This section provides guidance on using the `identify` method to successfully identify your product's users. This will show you which users are triggering events in June. It is recommended to include this code snippet in the section of your code where user sign-ups, logins, or account details updates are handled.
+
+## Code
+
+Replace `USER_ID` with a unique identifier, preferably the user ID from your database. Including the user's email is also suggested, along with any additional "traits" like avatar, name, role, etc. This information will appear on the user's profile and can be used to filter users in reports.
+
+💡 **Not sure which traits to add?** We automatically map some standard ones: <Link href="https://help.june.so/en/articles/6817653-which-traits-you-should-be-tracking" isExternal color="blue.500">check out our guide</Link>
+
+<MultiLanguageIdentifyScript />
+
+<Divider />
+
+## Next: Track user behaviour
+
+Once you've implemented the `identify` method in your codebase, it's time to track what your users are doing in your product.
+
+<TrackLink mt={2} />
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

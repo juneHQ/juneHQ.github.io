@@ -1,0 +1,135 @@
+{
+  "metaDescriptions": [
+    {
+      "route": "/",
+      "title": "June - Product & Customer Analytics Software for B2B SaaS",
+      "description": "June is product analytics software for B2B SaaS. Through the platform you'll get auto-generated reports for customer analysis focused on how companies use your product",
+      "canonical": "https://www.june.so/",
+      "hasAccordion": true,
+      "accordionTitle": "Customer analytics software for B2B SaaS",
+      "accordionBody": "June is a Product & Customer Analytics Software, designed to seamlessly integrate product analytics with customer success strategies. <br /><br />Our platform provides a 360-degree view of user behaviour, from the initial activation to ongoing engagement, allowing you to pinpoint where users thrive and where they drop off. <br /><br />With real-time insights into key customer analytics metrics such as activation rates, feature adoption, and engagement patterns, you can proactively identify and mitigate churn risks. <br /><br />When integrated with your own CRM system, June equips your customer success and sales teams with the tools they need to build personalised retention strategies, ensuring that users remain loyal and invested in your product. They will be able to identify <a href=\"https://www.june.so/guides/upsell\">upsell and account expansion opportunities</a>, <a href=\"https://www.june.so/guides/how-to-convert-free-trials-onboard-customers-with-june-hubspot\">convert free trials into paying customers</a>, effortlessly manage <a href=\"https://www.june.so/guides/renewals\">SaaS renewals processes</a> and <a href=\"https://www.june.so/guides/churn-prediction-and-prevention\">predict and prevent users churn</a>. By leveraging our comprehensive analytics and customer success capabilities and <a href=\"https://www.june.so/blog\">content resources</a>, you'll not only enhance user satisfaction but also drive long-term growth and maximise customer lifetime value."
+    },
+    {
+      "route": "/content",
+      "title": "Resources & Guides on Product & Customer Analytics",
+      "description": "Resources, guides & playbooks on customer & product analytics to help next-gen B2B SaaS companies understand their users.",
+      "canonical": "https://www.june.so/content",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/customer-stories",
+      "title": "Product Analytics Case Studies & Customer Reviews - June",
+      "description": "Explore how fast-growing companies achieve success with June. Real product analytics case studies and stories of data-driven growth, user engagement, and product optimization",
+      "canonical": "https://www.june.so/customer-stories",
+      "hasAccordion": true,
+      "accordionTitle": "Product Analytics Case Studies and Customer Reviews",
+      "accordionBody": "Read product analytics case studies that have empowered various B2B SaaS companies to achieve deeper user engagement and optimise their growth strategies thanks to June.<br/><br/>\nBy integrating our <a href=\"https://www.june.so/\">customer analytics software</a> with platforms like HubSpot, businesses such as Knack and Commandbar have <a href=\"https://www.june.so/role/success-sales\">streamlined user data into their CRM systems</a>, enabling teams to proactively address customer needs, build tailored <a href=\"https://www.june.so/blog/customer-engagement-strategies\">customer engagement strategies</a> and improve onboarding processes.<br/><br/>\nWith insights into real-time product usage, companies have refined their outreach and feature development, resulting in effective <a href=\"https://www.june.so/guides/churn-prediction-and-prevention\">churn prevention</a> and enhanced customer satisfaction.<br/><br/>These product analytics case studies showcase how June drives efficient, data-informed decision-making across product and customer success teams."
+    },
+    {
+      "route": "/role/success-sales",
+      "title": "Customer Analytics Software for Customer Success & Sales",
+      "description": "Discover how your B2B SaaS customer success & sales team can leverage our product analytics software to make your customers more successful.",
+      "canonical": "https://www.june.so/role/success-sales",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/role/product",
+      "title": "Customer Analytics Software for B2B SaaS Product Teams",
+      "description": "Discover how your B2B SaaS product team can leverage our product analytics software to make your customers more successful.",
+      "canonical": "https://www.june.so/role/product",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/integration/attio",
+      "title": "June - Attio Integration: Product Data in your CRM",
+      "description": "June is the only product analytics tool which can be integrated with your CRM. Learn more about the integration between June and Attio. ",
+      "canonical": "https://www.june.so/integration/attio",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/integration/hubspot",
+      "title": "Product Analytics HubSpot - June CRM Integration",
+      "description": "June is the only product analytics tool which can be integrated with your CRM. Learn more about the integration between June and HubSpot. ",
+      "canonical": "https://www.june.so/integration/hubspot",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/integration/salesforce",
+      "title": "June - Salesforce Integration: Product Data in your CRM",
+      "description": "June is the only product analytics tool which can be integrated with your CRM. Learn more about the integration between June and Salesforce. ",
+      "canonical": "https://www.june.so/integration/salesforce",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/tools/saas-crm-setup-audit",
+      "title": "Saas Crm Setup Audit",
+      "description": "Audit your CRM setup and understand how to improve it. Get step-by-step guides on how to improve your HubSpot instance",
+      "canonical": "https://www.june.so/tools/saas-crm-setup-audit",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/benchmarks",
+      "title": "SaaS Industry Benchmarks: Metrics Benchmarking for SaaS Companies",
+      "description": "Explore our SaaS Metrics Benchmarks to understand how your product measures up against the industry. Gain insights on key metrics across acquisition, activation, retention, and more, to strategize your product's growth effectively",
+      "canonical": "https://www.june.so/benchmarks",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/june-vs-mixpanel",
+      "title": "Mixpanel Alternatives: June vs. Mixpanel",
+      "description": "Mixpanel Alternatives: Stop paying for a tool that almost nobody exploits in your team. Find out how June's product analytics for B2B is different",
+      "canonical": "https://www.june.so/june-vs-mixpanel",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/june-vs-amplitude",
+      "title": "Amplitude Alternatives: June vs. Amplitude",
+      "description": "Amplitude Alternatives: Stop paying for a tool that almost nobody exploits in your team. Find out how June's product analytics for B2B is different",
+      "canonical": "https://www.june.so/june-vs-amplitude",
+      "hasAccordion": false,
+      "accordionTitle": "",
+      "accordionBody": ""
+    },
+    {
+      "route": "/blog/product-analytics-for-crm",
+      "title": "-",
+      "description": "-",
+      "canonical": "https://www.june.so/blog/product-analytics-for-crm",
+      "hasAccordion": true,
+      "accordionTitle": "How do customer health scores work with product analytics?",
+      "accordionBody": "Customer health scores combine multiple data points from product analytics and CRM to assess account status. These typically include product usage metrics (login frequency, feature adoption), customer interaction data (support tickets, response times), and business metrics (contract value, renewal dates). The resulting score helps teams prioritize accounts and take appropriate action based on customer status."
+    },
+    {
+      "route": "/blog",
+      "title": "Blog on Customer Analytics Solutions in B2B SaaS",
+      "description": "Read the latest articles and content resources on the world of customer and product analytics in the B2B Saas industry",
+      "canonical": "",
+      "hasAccordion": "",
+      "accordionTitle": "",
+      "accordionBody": ""
+    }
+  ],
+  "variables": {
+    "homepage_h1_title": "How startups send product <br class=\"lg:block hidden\" />\ndata to <span class=\"text-[#FF7B57]\">Hubspot</span>",
+    "homepage_h2_title": "Help your CS and Sales teams activate, retain and expand customers.<br/>With the #1 way to send product usage data to your CRM.",
+    "website_logo_alt_tag": "customer analytics software"
+  }
+}

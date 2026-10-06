@@ -1,0 +1,60 @@
+/* These styles override blog.css styles */
+
+@media (min-width: 800px) {
+  .customer-story-body figure img {
+    max-width: 100%;
+    margin-left: unset;
+  }
+}
+
+.customer-story-body figure {
+  border: 1px solid whitesmoke;
+  margin: 64px 0;
+}
+
+/* This is assuming that the first image is an information box like https://imgur.com/a/LwPpRSS */
+.customer-story-body figure:first-child {
+  border: unset;
+  margin: 0 0 80px;
+}
+
+.customer-story-body p,
+.customer-story-body span,
+.customer-story-body li,
+blockquote {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--chakra-colors-gray-700);
+}
+
+.customer-story-body p {
+  margin: 0 0 24px;
+}
+
+.customer-story-body h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--chakra-colors-purple-900);
+  margin: 32px 0 8px;
+  padding: unset;
+  border-bottom: unset;
+}
+
+.customer-story-body h3 {
+  font-size: 20px !important;
+  color: var(--chakra-colors-purple-900);
+}
+
+.customer-story-body h4 {
+  font-size: 18px !important;
+  color: var(--chakra-colors-purple-900);
+}
+
+.customer-story-body h5 {
+  font-size: 16px !important;
+  color: var(--chakra-colors-purple-900);
+}
+
+.customer-story-body blockquote {
+  margin: 24px 0;
+}

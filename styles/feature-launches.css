@@ -1,0 +1,111 @@
+.badge-container {
+  position: relative;
+  background-color: transparent;
+  width: 125px;
+  height: 150px;
+  perspective: 1000px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin-badge 6s linear infinite;
+}
+
+/* This adds a small strip of div in the sandwiched between the front and back of the badge to make it look like it's 3D */
+.badge::before {
+  content: '';
+  height: 146px;
+  width: 4px;
+  background-image: linear-gradient(to bottom, #5858D2, #404099);
+  position: absolute;
+  transform: rotateY(90deg) translateX(50%);
+  top: 0;
+  left: 48%;
+}
+
+.badge-front,
+.badge-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.badge-front {
+  background-color: transparent;
+  background-image: url('/j-badge.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform-style: preserve-3d;
+}
+
+/* This is the element of the shine effect */
+.badge-front::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 150px;
+  transform: skewX(-30deg);
+  left: -90px;
+  animation: shine-badge 5s infinite ease-in-out;
+}
+
+.badge-back {
+  position: relative;
+  background-color: transparent;
+  background-image: url('/j-badge-back.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateZ(-5px);
+  transform-style: preserve-3d;
+}
+
+/* This adds a small strip of div in the middle left to prevent us from peaking into the badge's empty soul, "J" */
+.badge-back::before {
+  content: '';
+  width: 4px;
+  height: 75px;
+  position: absolute;
+  transform: rotateY(90deg) translateX(-50%);
+  background-image: linear-gradient(to bottom, #6766F3, #4B4BB2);
+  top: 30px;
+}
+
+/* This adds a small strip of div in the middle right to prevent us from peaking into the badge's empty soul, "J" */
+.badge-back::after {
+  content: '';
+  width: 4px;
+  height: 75px;
+  position: absolute;
+  transform: rotateY(90deg) translateX(-50%);
+  background-image: linear-gradient(to bottom, #6766F3, #4B4BB2);
+  top: 30px;
+  right: 0;
+}
+
+@keyframes spin-badge {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* This adds a shine effect. If the animation duration is 5s, this will execute in the first 1s to add some form of delay */
+@keyframes shine-badge {
+  0%,
+  20% {
+    left: -90px;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}

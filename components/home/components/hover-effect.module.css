@@ -1,0 +1,74 @@
+.container {
+  --x: 0px;
+  --y: 0px;
+  --border: 2px;
+  --border-radius: var(--chakra-radii-2xl);
+  --static-border: #e2e8f0;
+  --static-bg: #fff;
+  --hover-border: rgba(104, 104, 247);
+  --hover-glow: rgba(104, 104, 247, 0.1);
+
+  padding: 1px;
+  cursor: pointer;
+  position: relative;
+  background: var(--static-border);
+  border-radius: var(--border-radius);
+}
+
+.container:hover > .border {
+  opacity: 1;
+}
+
+.container:hover > .glow {
+  opacity: 1;
+}
+
+.border {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: absolute;
+  border-radius: var(--chakra-radii-2xl);
+  pointer-events: none;
+  background: radial-gradient(200px circle at var(--x) var(--y), var(--hover-border), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.background {
+  z-index: 2;
+  position: absolute;
+  top: var(--border);
+  right: var(--border);
+  bottom: var(--border);
+  left: var(--border);
+  background: var(--static-bg);
+  border-radius: calc(var(--chakra-radii-2xl) - var(--border));
+}
+
+.glow {
+  top: var(--border);
+  right: var(--border);
+  bottom: var(--border);
+  left: var(--border);
+  z-index: 3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: absolute;
+  border-radius: var(--chakra-radii-2xl);
+  pointer-events: none;
+  background: radial-gradient(300px circle at var(--x) var(--y), var(--hover-glow), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.content {
+  z-index: 4;
+  position: relative;
+}

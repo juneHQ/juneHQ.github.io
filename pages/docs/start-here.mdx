@@ -1,0 +1,47 @@
+import MdxLayout from '../../components/docs/MdxLayout';
+import { Box, Flex } from '@chakra-ui/react';
+import Link from 'next/link';
+
+export const meta = {
+  heading: 'Start here',
+};
+
+June helps you understand how users interact with your product by tracking events, users, and companies.
+
+## Core concepts
+
+**Events** are actions that happen in your product, like signing up, making a purchase, or viewing a page.
+
+<Flex my={8} justifyContent="center" align="center">
+  <img alt="Track events" src={'/docs/event-explainer.png'} />
+</Flex>
+
+**Users** are the people using your product. Each user has a unique ID that lets you track their journey over time.
+
+<Flex my={8} justifyContent="center" align="center">
+  <img alt="Users profile" src={'/docs/users-explainer.png'} />
+</Flex>
+
+**Companies** are the organizations that your users belong to. Essential for B2B products where user behavior depends on their company context.
+
+<Flex my={8} justifyContent="center" align="center">
+  <img alt="Companies profile" src={'/docs/company-explainer.png'} />
+</Flex>
+
+**Traits** are additional properties about users and companies - like subscription plan, role, or company size. These help you segment and understand behavior patterns.
+
+<Flex my={8} justifyContent="center" align="center">
+  <img alt="Traits" src={'/docs/traits-explainer.png'} />
+</Flex>
+
+## Next steps
+
+#### Plan your implementation
+
+Identify what events and properties matter for your product. [Plan your implementation →](/docs/plan)
+
+#### Start tracking
+
+If you know what you want to track, jump straight to installation. [Install June →](/docs/quickstart/install)
+
+export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;
