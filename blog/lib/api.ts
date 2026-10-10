@@ -12,7 +12,9 @@ import { localizeGhostContent } from './assets';
  * `tag` / `id` joined with `+`, `published_at DESC` default order, a default limit of 15,
  * `fields` projection, and `tags` / `authors` only present when included.
  *
- * Image URLs and links to the old Ghost domain are rewritten on load (see `./assets`).
+ * Image URLs and links to the old Ghost domain are rewritten on load (see `./assets`), and
+ * `content/ghost/overrides.json` applies deliberate changes to individual posts (by slug)
+ * without touching the archived data.
  */
 
 type Include = string | string[];
@@ -47,7 +49,11 @@ function routeForPost(post?: PostOrPage) {
 
 function load() {
   if (!cache) {
-    const posts: PostOrPage[] = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'posts.json'), 'utf-8'));
+    const archived: PostOrPage[] = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'posts.json'), 'utf-8'));
+    const overrides: Record<string, Partial<PostOrPage>> = JSON.parse(
+      fs.readFileSync(path.join(CONTENT_DIR, 'overrides.json'), 'utf-8')
+    );
+    const posts = archived.map((post) => ({ ...post, ...overrides[post.slug] }));
     const tags: Tag[] = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'tags.json'), 'utf-8'));
     const routeForSlug = (slug: string) => routeForPost(posts.find((post) => post.slug === slug));
     cache = {
