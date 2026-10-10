@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Heading, HStack, Text, useOutsideClick, useDisclosure } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, HStack, Text, useOutsideClick, useDisclosure } from '@chakra-ui/react';
 import { NextResponsiveImage } from 'components/core/next-responsive-image';
 import { defaultPx } from 'components/core/utils/default-container-px';
 import { AnimatePresence, motion, Transition, Variants } from 'framer-motion';
@@ -177,17 +177,6 @@ export function AiHero() {
 										>
 											June AI lets you answer complex product questions using your favourite language: <Text textDecoration="line-through" as="span">SQL</Text> English. Powered by GPT-4.
 										</Text>
-										<Button
-											zIndex={1000}
-											as="a"
-											variant="landingGradient"
-											size="landingBlock"
-											href={`${process.env.JUNE_APP_HOST}/start`}
-											rel="noreferrer noopener"
-											onClick={() => setOpen(true)}
-										>
-											Get access
-										</Button>
 									</MotionFlex>
 									<motion.div layout>
                     <Box role="group" cursor="pointer" w="full" height="auto" onClick={openVideoModal}>

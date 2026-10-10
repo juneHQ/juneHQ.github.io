@@ -5,7 +5,6 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { getCustomerStories, getCustomerStory } from "lib/customer-story";
 import { CustomerStoryNavigationalButton } from "components/customer-stories/customer-story-navigation-button";
 import { defaultPx } from "components/core/utils/default-container-px";
-import { TryJuneBanner } from "components/core/try-june-banner";
 import { pageStyles } from "components/core/page-styles";
 import { Navbar } from "components/core/navbar/navbar";
 import { Footer } from "components/core/footer/footer";
@@ -122,7 +121,6 @@ const CustomerStory = (props: Props) => {
             </article>
           </Box>
         </Container>
-        <TryJuneBanner _wrapper={{ pb: 4, mb: -4, overflow: 'hidden', ...pageStyles.middleSection }} />
         <Footer _wrapper={pageStyles.lastSection} />
       </Box>
     </>

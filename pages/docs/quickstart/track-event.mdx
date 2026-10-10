@@ -2,8 +2,8 @@ import Widget from 'components/docs/widgets/Widget';
 import ScriptGenerator from 'components/docs/widgets/ScriptGenerator';
 import MdxLayout from 'components/docs/MdxLayout';
 import { MultiLanguageUserTrackScript } from 'components/docs/widgets/MultiLanguageUserTrackScript';
-import { IdentifyUsersLink, JuneLink } from 'components/docs/widgets/MiniLinks';
-import { Divider, Flex, Box } from '@chakra-ui/react';
+import { IdentifyUsersLink } from 'components/docs/widgets/MiniLinks';
+import { Box } from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
 
 export const meta = {
@@ -36,16 +36,5 @@ For June, one of our core features is when a user loads and creates a report. Th
 Replace `USER_ID` with your own unique identified, ideally the user ID from your database. Passing additional information is possible using the `properties` object.
 
 <MultiLanguageUserTrackScript />
-
-<Divider />
-
-<Flex direction='column'>
-      ## Ready to jump into June?
-
-      Once you've implemented the SDK, you're ready to jump into June.
-
-      <JuneLink mt={2} />
-
-</Flex>
 
 export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

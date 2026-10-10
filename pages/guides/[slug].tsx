@@ -3,7 +3,6 @@ import { absoluteUrl } from "lib/utils";
 import moment from "moment";
 import { getSingleGuides } from "guides/lib/getSingleGuides";
 import { getGuides } from "guides/lib/getGuides";
-import { TryJuneBanner } from "components/core/try-june-banner";
 import { pageStyles } from "components/core/page-styles";
 import { Navbar } from "components/core/navbar/navbar";
 import { Footer } from "components/core/footer/footer";
@@ -145,7 +144,6 @@ const GuidePage = (props) => {
             </Box>
           </>
         </Flex>
-        <TryJuneBanner _wrapper={pageStyles.middleSection} />
         <Footer _wrapper={pageStyles.lastSection} />
         <Toc elements={['#toc']} />
       </Box>

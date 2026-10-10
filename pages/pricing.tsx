@@ -48,7 +48,6 @@ export default function Pricing() {
       <Box zIndex="docked" w="100%" maxW="100vw" overflowX="hidden" overflowY="hidden">
         <PricingTier />
         <LogoCloud />
-        {/* <FourTierPricing />  */}
         <FaqPricing />
         <Testimonials
           testimonials={[

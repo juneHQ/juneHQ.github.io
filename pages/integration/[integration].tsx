@@ -9,10 +9,8 @@ import { ComputedTraits } from 'components/crm/crm_computed_traits';
 import { DataMapping } from 'components/crm/crm-mapping';
 import { CrmFeature } from 'components/crm/crm-feature';
 import { Benefits } from 'components/crm/crm-benefits';
-import { TryJuneBanner } from 'components/core/try-june-banner';
 import { pageStyles } from 'components/core/page-styles';
 import { Navbar } from 'components/core/navbar/navbar';
-import { GradientHighlight } from 'components/core/highlight';
 import { Footer } from 'components/core/footer/footer';
 import { Box } from '@chakra-ui/react';
 import Guides from 'components/role/success-sales/guides';
@@ -69,16 +67,6 @@ export default function AttioIntegration({ crm }: CrmIntegrationProps) {
       <DataMapping crm={crm} />
       <Testimonials testimonials={crm.testimonials} />
       <Box zIndex="docked" w="100%" maxW="100vw" overflow="hidden">
-        {/* <TryJuneBanner
-          _wrapper={pageStyles.middleSection}
-          heading={
-            <>
-              <GradientHighlight> Connect June </GradientHighlight>to your CRM
-            </>
-          }
-          description={<>Feed {crm.name} with June's data, no technical support needed</>}
-          buttonText="Try now"
-        /> */}
         {/* <Footer _wrapper={pageStyles.lastSection} /> */}
         <Guides />
         <NewFooter />

@@ -148,7 +148,6 @@ export default function Menu({ currentRoute = '/docs' }) {
 
       <div className="border-t border-gray-200 pt-5">
         <NavLink external path="https://help.june.so" label="Help center" icon="/docs/help.svg" />
-        <NavLink external path="https://analytics.june.so" label="Go to June home" icon="/docs/home.svg" />
       </div>
     </div>
   );

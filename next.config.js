@@ -33,7 +33,6 @@ const config = {
   // fixed here so the output never depends on whichever .env the build machine has.
   env: {
     JUNE_API_HOST: 'https://api.june.so',
-    JUNE_APP_HOST: 'https://analytics.june.so',
   },
   images: {
     disableStaticImages: true,

@@ -3,17 +3,9 @@ import Link from 'next/link';
 import MdxLayout from '../../../components/docs/MdxLayout';
 import ScriptGenerator from 'components/docs/widgets/ScriptGenerator';
 import Sandbox from 'components/docs/widgets/Sandbox';
-import TokenWarning from 'components/docs/widgets/TokenWarning';
 import StepDisclosure from 'components/docs/widgets/StepDisclosure';
 import Video from 'components/docs/widgets/Video';
-import {
-  HomeLink,
-  LinkGroup,
-  ReadMoreLink,
-  VerifyIntegrationLink,
-  VerifyIdentifiesLink,
-  IdentifyUsersLink,
-} from 'components/docs/widgets/MiniLinks';
+import { LinkGroup, ReadMoreLink, IdentifyUsersLink } from 'components/docs/widgets/MiniLinks';
 import { MultiLanguageInstallScript } from 'components/docs/widgets/MultiLanguageInstallScript';
 import Widget from 'components/docs/widgets/Widget';
 import { Divider } from '@chakra-ui/react';
@@ -22,8 +14,6 @@ export const meta = {
   heading: 'Installation',
   subheading: 'Add the June SDK to your app in minutes',
 };
-
-<TokenWarning />
 
 # Install
 

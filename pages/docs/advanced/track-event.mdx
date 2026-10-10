@@ -2,8 +2,8 @@ import Widget from 'components/docs/widgets/Widget';
 import ScriptGenerator from 'components/docs/widgets/ScriptGenerator';
 import MdxLayout from 'components/docs/MdxLayout';
 import { MultiLanguageGroupTrackScript } from 'components/docs/widgets/MultiLanguageGroupTrackScript';
-import { IdentifyGroupsLink, JuneLink } from 'components/docs/widgets/MiniLinks';
-import { Divider, Flex, Box } from '@chakra-ui/react';
+import { IdentifyGroupsLink } from 'components/docs/widgets/MiniLinks';
+import { Box } from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
 
 export const meta = {
@@ -35,16 +35,5 @@ This guide will teach you how to successfully track how your groups (workspaces,
 Replace `USER_ID` with your user identifier, and include a `groups` object within the `properties` with the right group types and group IDs. You can associate events with multiple group types by including their respective IDs.
 
 <MultiLanguageGroupTrackScript />
-
-<Divider />
-
-<Flex direction='column'>
-      ## Ready to jump into June?
-
-      Once you've implemented the SDK, you're ready to jump into June.
-
-      <JuneLink mt={2} />
-
-</Flex>
 
 export default ({ children }) => <MdxLayout {...meta}>{children}</MdxLayout>;

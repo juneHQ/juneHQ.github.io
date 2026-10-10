@@ -9,17 +9,13 @@ import {
   HStack,
   Spacer,
 } from '@chakra-ui/react';
-import { useContext, useRef, useState } from 'react';
-import { AuthContext } from '../../Context/Auth';
-import { useAuth } from 'unbundled-core/hooks/useAuth';
+import { useRef, useState } from 'react';
 import Search from './search/Search';
 import { default as JuneMenu } from './Menu';
 
 export default function TopNav() {
   const [navOpen, setNavOpen] = useState(false);
   const btnRef = useRef();
-  const { currentApp, setCurrentApp } = useContext(AuthContext);
-  const { loggedIn, apps } = useAuth();
 
   const onOpen = () => setNavOpen(true);
   const onClose = () => setNavOpen(false);
@@ -41,33 +37,6 @@ export default function TopNav() {
         </Button>
         <Search />
         <Spacer />
-        {!loggedIn && (
-          <Button
-            ml={4}
-            size="sm"
-            as="a"
-            href="https://analytics.june.so/login?next=http://june.so/docs"
-            fontWeight={600}
-            fontSize={14}
-            colorScheme="purple"
-          >
-            Log in
-          </Button>
-        )}
-        {loggedIn && currentApp && (
-          <>
-            <Button
-              display={{ base: 'none', md: 'flex' }}
-              ml={4}
-              size="sm"
-              as="a"
-              href={`${process.env.JUNE_APP_HOST}/a/${currentApp.id}/getting-started`}
-              variant="ghost"
-            >
-              Your write keys
-            </Button>
-          </>
-        )}
       </HStack>
     </>
   );

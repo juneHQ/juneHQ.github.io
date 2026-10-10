@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { LogoCloud } from 'components/home/logo-cloud';
 import HeroSection from 'components/feature-reports/HeroSection';
 import Carousel from 'components/feature-reports/Carousel';
-import { TryJuneBanner } from 'components/core/try-june-banner';
 import { pageStyles } from 'components/core/page-styles';
 import { Navbar } from 'components/core/navbar/navbar';
 import { Footer } from 'components/core/footer/footer';
@@ -66,20 +65,6 @@ export default function FeatureLaunches() {
         />
         <Box my={[12, 0, 0]} />
         <Carousel />
-        <TryJuneBanner
-          heading={
-            <>
-              <Text lineHeight="1" letterSpacing="-0.02" fontFamily="featureHeading">
-                Set up June in
-                <br />
-                <Text bgGradient="linear(to-b, purple.500, #4C40D9)" bgClip="text">
-                  2 minutes
-                </Text>
-              </Text>
-            </>
-          }
-          _wrapper={pageStyles.middleSection}
-        />
         <Footer _wrapper={pageStyles.lastSection} />
       </Box>
     </>

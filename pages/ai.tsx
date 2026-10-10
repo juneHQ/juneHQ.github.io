@@ -2,7 +2,6 @@ import { TweetFragment } from 'types/models/tweet-fragment';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { LogoWallSection } from 'components/home/logo-wall-section';
-import { TryJuneBanner } from 'components/core/try-june-banner';
 import { pageStyles } from 'components/core/page-styles';
 import { Navbar } from 'components/core/navbar/navbar';
 import { Footer } from 'components/core/footer/footer';
@@ -76,7 +75,6 @@ export default function AiLaunch() {
         <ExploreAnalyticsSection _wrapper={{ pt: [12, 12, 120], pb: 0 }} />
         <AiDataSource _wrapper={pageStyles.middleSection} />
         <AiSocials _wrapper={{ mt: [50, 50, 16] }} />
-        <TryJuneBanner buttonText="Get access" mode="dark" _wrapper={pageStyles.middleSection} />
         <Footer mode="dark" _wrapper={{ pb: [20] }} />
       </Box>
     </>

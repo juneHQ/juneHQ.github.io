@@ -21,7 +21,6 @@ const tiers = [
   {
     name: 'All-in-one',
     id: 'tier-pro',
-    href: 'https://analytics.june.so/start',
     priceMonthly: '$499',
     priceYearly: '$349',
     description: 'Everything you need as a growing B2B SaaS company',
@@ -84,7 +83,6 @@ const tiers = [
       },
     ],
     featured: false,
-    cta: 'Start free trial',
   },
 ];
 
@@ -183,18 +181,6 @@ export function PricingTier() {
                   />
                 </AnimatePresence>
               </div>
-            </div>
-            <div className="mt-8 flex align-center flex-col sm:flex-row gap-4">
-              <a
-                href={tier.href}
-                aria-describedby={tier.id}
-                className={classNames(
-                  'block w-full rounded-[10px] px-3 py-2 text-center text-sm font-hero font-semibold text-white bg-[#151531] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:scale-105 duration-300 ease-in-out',
-                  'hover:bg-[#0F0F27] focus-visible:outline-indigo-600',
-                )}
-              >
-                {tier.cta}
-              </a>
             </div>
           </div>
         ))}

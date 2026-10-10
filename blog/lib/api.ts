@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import type { PostOrPage, Tag } from '@tryghost/content-api';
+import { removeAppLinks } from './appLinks';
 import { localizeGhostContent } from './assets';
 
 /**
@@ -12,7 +13,8 @@ import { localizeGhostContent } from './assets';
  * `tag` / `id` joined with `+`, `published_at DESC` default order, a default limit of 15,
  * `fields` projection, and `tags` / `authors` only present when included.
  *
- * Image URLs and links to the old Ghost domain are rewritten on load (see `./assets`), and
+ * Image URLs and links to the old Ghost domain are rewritten on load (see `./assets`), embeds
+ * of and links to the shut-down June app are removed (see `./appLinks`), and
  * `content/ghost/overrides.json` applies deliberate changes to individual posts (by slug)
  * without touching the archived data.
  */
@@ -53,8 +55,8 @@ function load() {
     const overrides: Record<string, Partial<PostOrPage>> = JSON.parse(
       fs.readFileSync(path.join(CONTENT_DIR, 'overrides.json'), 'utf-8')
     );
-    const posts = archived.map((post) => ({ ...post, ...overrides[post.slug] }));
-    const tags: Tag[] = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'tags.json'), 'utf-8'));
+    const posts = removeAppLinks(archived.map((post) => ({ ...post, ...overrides[post.slug] })));
+    const tags: Tag[] = removeAppLinks(JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, 'tags.json'), 'utf-8')));
     const routeForSlug = (slug: string) => routeForPost(posts.find((post) => post.slug === slug));
     cache = {
       posts: localizeGhostContent(posts, routeForSlug),

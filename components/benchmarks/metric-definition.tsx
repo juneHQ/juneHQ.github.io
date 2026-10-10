@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Button, Flex, HStack, Text, VStack } from '@chakra-ui/react';
+import { Flex, HStack, Text, VStack } from '@chakra-ui/react';
 
 export interface MetricDefinitionProps {
   title: string;
@@ -36,14 +36,6 @@ export const MetricDefinition = (props: MetricDefinitionProps) => {
             <Text fontWeight={'medium'}>Method used</Text>
             <Text fontSize={'sm'}>{props.methodDescription}</Text>
           </Flex>
-        </VStack>
-        <VStack alignItems="start" spacing="4">
-          <Text fontSize="sm" color="landing.black">
-            Connect your product usage data to June and get your {props.title.toLowerCase()} out of the box:
-          </Text>
-          <Button as="a" variant="landingSolid" size="landingMd" href={`${process.env.JUNE_APP_HOST}/start`}>
-            Sign up for free
-          </Button>
         </VStack>
       </VStack>
     </HStack>

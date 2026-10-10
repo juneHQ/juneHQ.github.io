@@ -24,12 +24,6 @@ export function CouponHero({ sponsor }) {
             June is the free and simple way to launch your product, understand your users and reduce churn
           </p>
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-y-4 gap-x-6">
-            <a
-              className="inline-flex items-center justify-center h-12 px-6 text-lg font-semibold text-white bg-primary border-2 border-transparent rounded-[12px] hover:bg-white hover:text-primary hover:border-primary transition-colors duration-300"
-              href="https://analytics.june.so/start"
-            >
-              Get started
-            </a>
             <p className="text-sm font-medium text-gray-500">25% off your first year</p>
           </div>
         </div>

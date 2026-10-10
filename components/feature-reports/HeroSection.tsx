@@ -4,7 +4,7 @@ import { AnimatePresence, motion, Transition, Variants } from 'framer-motion';
 import { HeroVideoModal } from 'components/home/components/hero-video-modal';
 import { defaultPx } from 'components/core/utils/default-container-px';
 import { NextResponsiveImage } from 'components/core/next-responsive-image';
-import { Box, Button, Container, Flex, Heading, HStack, Text, useDisclosure, useOutsideClick } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, HStack, Text, useDisclosure, useOutsideClick } from '@chakra-ui/react';
 import Screenshot from './Screenshot';
 
 const MotionBox = motion(Box);
@@ -191,16 +191,6 @@ export default function HeroSection() {
                     Use our zero-setup report to validate, iterate <br />
                     and celebrate your features.
                   </Text>
-                  <Button
-                    as="a"
-                    variant="landingGradient"
-                    size="landingBlock"
-                    href={`${process.env.JUNE_APP_HOST}/start`}
-                    rel="noreferrer noopener"
-                    onClick={() => setOpen(true)}
-                  >
-                    Get started for free
-                  </Button>
                 </MotionFlex>
                 <Box
                   pos="absolute"

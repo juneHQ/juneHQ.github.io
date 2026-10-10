@@ -20,12 +20,6 @@ export function ComparisonHero({ alternative }: { alternative: IAlternative }) {
             {alternative.hero.subtitle}
           </p>
           <div className="mt-10 flex items-center gap-x-6 justify-center lg:justify-start">
-            <a
-              href="https://analytics.june.so/login"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </a>
             <a href={alternative.fullArticle} className="text-sm font-semibold leading-6 text-gray-900">
               Learn more <span aria-hidden="true">→</span>
             </a>
